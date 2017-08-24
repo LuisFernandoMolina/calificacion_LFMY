@@ -84,11 +84,7 @@
 <div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
-<<<<<<< HEAD
-       <p><a href="localhost/constitucion/calificacion_LFMY/pdf">PDF</a></p>
-=======
       <p><a href="/constitucion/calificacion_LFMY/pdf">PDF</a></p>
->>>>>>> d6b2d6748b347fae92f4c46552f2dd299ce553bc
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
     </div>
