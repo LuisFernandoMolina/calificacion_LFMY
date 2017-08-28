@@ -13,7 +13,7 @@
 			<h2>Nuevo Registro</h2>
 			<input type="text" placeholder="&#128104; Usuario" name="Nombre">
 			<input type="password" placeholder="&#128272; Constraseña" name="clave">
-			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
+			//<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
 			<form>
 			<div class="radio">
 				<h2>Tipo de usuario</h2>
