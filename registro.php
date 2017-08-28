@@ -17,8 +17,9 @@
 			<form>
 			<div class="radio">
 				<h2>Tipo de usuario</h2>
-				<input type="radio" name="tipou" id="director" value="0">
 				<label for="director">Director</label><br />
+				<input type="radio" name="tipou" id="director" value="0">
+				//<label for="director">Director</label><br />
 				<input type="radio" name="tipou" id="docente" value="1">
 				<label for="docente">Docente</label><br />
 				<input type="radio" name="tipou" id="estudiante" value="2">
