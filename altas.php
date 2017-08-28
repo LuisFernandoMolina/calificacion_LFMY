@@ -25,7 +25,7 @@
 		else
 		{
 			$insertar ="INSERT INTO usuarios (Nombre, clave) VALUES('$Nombre, $clave')";
-			$resultado = mysqli_quert($conexion, $insertar);
+			$resultado = mysqli_query($conexion, $insertar);
 			if(!$resultado){
 				echo 'Error al registrarse';
 			}
