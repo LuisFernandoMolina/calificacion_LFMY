@@ -1,9 +1,9 @@
 <?php 
-	//require("connect_db.php");
+	//require de la conexion
+	include("conexion.php");
 	$username=$_POST['usuario'];
 	$pass=$_POST['clave'];
-	//Conexion a la base
-	$conexion =mysqli_connect("localhost","root","","constitucion");
+	//Consulta a la base 
 	$consulta="SELECT*FROM usuarios WHERE Nombre='$username' and clave='$pass'";
 	$resultado=mysqli_query($conexion,$consulta);
 	
