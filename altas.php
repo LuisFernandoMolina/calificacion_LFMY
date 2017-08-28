@@ -16,24 +16,24 @@
 	}
 	echo $error_message;
 	
-	$verifica="SELECT COUNT(Nombre)FROM usuarios WHERE Nombre='$Nombre'";
+	$verifica="SELECT * FROM usuarios WHERE Nombre='$Nombre'";
 	$verifica=mysqli_query($conexion,$verifica);
-	if($verifica[0]>=1)
-	{
-		echo 'El usuario ya existe';
-	}
-	else
-	{
-		$insertar ="INSERT INTO usuarios (nombre, clave) VALUES('$Nombre, $clave')";
-		$resultado = mysqli_quert($conexion, $insertar);
-		if(!$resultado){
-			echo 'Error al registrarse';
+	$fil=mysqli_num_rows($verifica);
+		if($fil>0){
+			echo 'El usuario ya existe';
 		}
-		else{
-			echo 'Registro exitoso';
+		else
+		{
+			$insertar ="INSERT INTO usuarios (Nombre, clave) VALUES('$Nombre, $clave')";
+			$resultado = mysqli_quert($conexion, $insertar);
+			if(!$resultado){
+				echo 'Error al registrarse';
+			}
+			else{
+				echo 'Registro exitoso';
+			}
+			mysqli_close($conexion);
 		}
-		mysqli_close($conexion);
-	}
 
 ?>
 
