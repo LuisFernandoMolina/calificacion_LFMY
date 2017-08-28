@@ -9,7 +9,7 @@
 	$verifica=mysqli_query($verifica));
 	if($verifica[0]>="1")
 	{
-
+		echo 'El usuario ya existe';
 	}
 	else
 	{
