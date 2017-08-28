@@ -3,8 +3,12 @@
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
-    // Realiza la validación de contraseñas
 	$error_message = "";
+	//Validar usuario no este vacio
+	if($Nombre==""){ 
+		$error_message="Ingrese un nombre de usuario"; 
+	} 
+    // Realiza la validación de contraseñas
 	if (strlen($clave) < 3) {
 		$error_message = "La contraseña es demasiado corta. Por favor, introduzca al menos 6 caracteres";
 	} else if ( $clave != $_POST["confclave"]) {
@@ -14,16 +18,13 @@
 	
 	$verifica="SELECT COUNT(Nombre)FROM usuarios WHERE Nombre='$Nombre'";
 	$verifica=mysqli_query($conexion,$verifica);
-	//$verifica=mysqli_query($verifica);
-	
-	
-	if($verifica[0]>="1")
+	if($verifica[0]>=1)
 	{
 		echo 'El usuario ya existe';
 	}
 	else
 	{
-		$insertar ="INSERT INTO usuarios (nombre, clave) VALUES('$nombre, $clave')";
+		$insertar ="INSERT INTO usuarios (nombre, clave) VALUES('$Nombre, $clave')";
 		$resultado = mysqli_quert($conexion, $insertar);
 		if(!$resultado){
 			echo 'Error al registrarse';
