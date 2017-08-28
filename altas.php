@@ -5,7 +5,7 @@
 	$clave = $_POST["clave"];
     // Realiza la validación de contraseñas
 	$error_message = "";
-	if (strlen($clave) < 6) {
+	if (strlen($clave) < 3) {
 		$error_message = "La contraseña es demasiado corta. Por favor, introduzca al menos 6 caracteres";
 	} else if ( $clave != $_POST["confclave"]) {
 		$error_message = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo";
