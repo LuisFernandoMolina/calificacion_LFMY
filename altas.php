@@ -3,7 +3,7 @@
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
-	//$error_message = "";
+	$error_message = "";
 	//Validar usuario no este vacio
 	if($Nombre==""){ 
 		$error_message="Ingrese un nombre de usuario"; 
