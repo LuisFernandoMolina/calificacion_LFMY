@@ -53,10 +53,21 @@ input[type="submit"]:active{
 	}
 }
 //Check box
-.altas > div {
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc;
+input[type="radio"], 
+input[type="checkbox"] {
+    display: none;
 }
-.altas input[type="radio"]{
-		
+label:before {
+font-family: 'FontAwesome';
+width: 1.25em;
+display: inline-block;
+}
+input[type="radio"] + label:before  {
+content: "\f10c"; /* circle-blank */
+}
+input[type="radio"]:checked + label:before {
+content: "\f111"; /* circle */
+}
+input[type="checkbox"] + label:before {
+content: "\f096"; /* check-empty */
 }
