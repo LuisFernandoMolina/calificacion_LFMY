@@ -17,15 +17,20 @@
 			<form>
 			<div class="radio">
 				<h2>Tipo de usuario</h2>
-				<label for="director">Director</label><br />
-				<input type="radio" name="tipou" id="director" value="0">
-				//<label for="director">Director</label><br />
+				
+
+				<label for="director">Director</label> 
+				<input type="radio" name="tipou" id="director" value="0"/> 
+				
+				<label for="docente">Docente</label>
 				<input type="radio" name="tipou" id="docente" value="1">
-				<label for="docente">Docente</label><br />
-				<input type="radio" name="tipou" id="estudiante" value="2">
+				
 				<label for="estudiante">Estudiante</label>
-				<input type="radio" name="tipou" id="coordinador" value="0">
+				<input type="radio" name="tipou" id="estudiante" value="2">
+
 				<label for="coordinador">Coordinador</label>
+				<input type="radio" name="tipou" id="coordinador" value="3">
+				
 				<input type="submit" value="Registrar">
 			</div>
 			</form>
