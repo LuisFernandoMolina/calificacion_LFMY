@@ -9,11 +9,11 @@
 			<link rel="stylesheet" href="css\estilos.css">
 	</head>
 	<body>
-		<form action="altas.php" method="POST" class="altas">
+		<form action="altas.php" method="POST" >
 			<h2>Nuevo Registro</h2>
 			<input type="text" placeholder="&#128104; Usuario" name="Nombre">
 			<input type="password" placeholder="&#128272; Constraseña" name="clave">
-			//<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
+			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
 			<form>
 			<div class="radio">
 				<h2>Tipo de usuario</h2>
@@ -26,6 +26,8 @@
 				<label for="estudiante">Estudiante</label>
 				<input type="radio" name="tipou" id="coordinador" value="0">
 				<label for="coordinador">Coordinador</label>
+				<input type="submit" value="Registrar">	
+				<input type="submit" value="Cancelar">	
 			</div>
 			</form>
 			</form>
