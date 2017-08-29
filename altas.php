@@ -3,6 +3,7 @@
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
+	$value = $_POST["Tipos_usuarios_idTipos_usuarios"];
 	$error_message = "";
 	//Validar usuario no este vacio
 	if($Nombre==""){ 
@@ -24,7 +25,7 @@
 		}
 		else
 		{
-			$insertar ="INSERT INTO usuarios (Nombre, clave) VALUES('$Nombre, $clave')"; //falta el parametro de tipo de usuario
+			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios) VALUES('$Nombre, $clave')"; //falta el parametro de tipo de usuario
 			$resultado = mysqli_query($conexion, $insertar);
 			if(!$resultado){
 				echo 'Error al registrarse';

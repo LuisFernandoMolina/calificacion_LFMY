@@ -26,9 +26,11 @@
 				<label for="estudiante">Estudiante</label>
 				<input type="radio" name="tipou" id="coordinador" value="0">
 				<label for="coordinador">Coordinador</label>
-				<input type="submit" value="Registrar">	
-				<input type="submit" value="Cancelar">	
+				<input type="submit" value="Registrar">
 			</div>
+			</form>
+			<form action="index.html" method="POST">
+			<input type="submit" value="Cancelar">
 			</form>
 			</form>
 				
