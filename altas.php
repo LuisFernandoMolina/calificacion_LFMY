@@ -1,5 +1,5 @@
 <?php
-	include 'conexion.php';
+	require 'conexion.php';
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
@@ -30,8 +30,8 @@
 		}
 		else
 		{
-			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios,Grupos_idGrupos) VALUES('$Nombre, $clave, $Tipos_usuarios_idTipos_usuarios,$Grupos_idGrupos')"; //falta el parametro de tipo de usuario
-
+			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios,Grupos_idGrupos) VALUES('$Nombre', '$clave', '$Tipos_usuarios_idTipos_usuarios','$Grupos_idGrupos')"; //falta el parametro de tipo de usuario
+			echo($insertar);
 			$resultado = mysqli_query($conexion, $insertar);
 			if(!$resultado){
 				echo 'Error al registrarse';
