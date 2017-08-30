@@ -3,7 +3,7 @@
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
-	$value = $_POST["Tipos_usuarios_idTipos_usuarios"];
+	$Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
 	$error_message = "";
 	//Validar usuario no este vacio
 	if($Nombre==""){ 
