@@ -23,6 +23,10 @@
 			<br>2. Docente<br>
 			<br>3. Estudiante<br>
 			<br>4. Coordinador<br>
+
+			<br>Seleccione el campo de cecy:<br>
+			<input type="number" placeholder="&#128272; Introduce la Opcion" name="Grupos_idGrupos">
+			
 			
 			
 			

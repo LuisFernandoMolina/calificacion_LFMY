@@ -4,6 +4,7 @@
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
 	$Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
+	$Grupos_idGrupos=$_POST["Grupos_idGrupos"];
 	/*foreach ($_POST['Tipos_usuarios_idTipos_usuarios'] as $Tipos_usuarios_idTipos_usuarios);*/
 	$error_message = "";
 	//Validar usuario no este vacio
@@ -26,7 +27,7 @@
 		}
 		else
 		{
-			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios) VALUES('$Nombre, $clave, $Tipos_usuarios_idTipos_usuarios')"; //falta el parametro de tipo de usuario
+			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios, Grupos_idGrupos) VALUES('$Nombre, $clave, $Tipos_usuarios_idTipos_usuarios, $Grupos_idGrupos')"; //falta el parametro de tipo de usuario
 			$resultado = mysqli_query($conexion, $insertar);
 			if(!$resultado){
 				echo 'Error al registrarse';
