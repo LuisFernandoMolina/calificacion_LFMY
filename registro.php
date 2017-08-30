@@ -16,10 +16,10 @@
 			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
 			
 			<br>Seleccione el tipo de Usuario:<br>
-			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="1">Director<br>
-			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="2">Docente<br>
-			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="3">Estudiante<br>
-			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="4">Coordinador<br>
+			<input type='checkbox' name="Tipos_usuarios_idTipos_usuarios"* value="1">Director<br>
+			<input type='checkbox' name="Tipos_usuarios_idTipos_usuarios"* value="2">Docente<br>
+			<input type='checkbox' name="Tipos_usuarios_idTipos_usuarios"* value="3">Estudiante<br>
+			<input type='checkbox' name="Tipos_usuarios_idTipos_usuarios"* value="4">Coordinador<br>
 			
 			<input type="submit" value="Registrar">
 
