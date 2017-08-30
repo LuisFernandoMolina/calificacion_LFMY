@@ -14,25 +14,15 @@
 			<input type="text" placeholder="&#128104; Usuario" name="Nombre">
 			<input type="password" placeholder="&#128272; Constraseña" name="clave">
 			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
-			<form>
-			<div class="radio">
-				<h2>Tipo de usuario</h2>
-				
+			
+			<br>Seleccione el tipo de Usuario:<br>
+			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="1">Director<br>
+			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="2">Docente<br>
+			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="3">Estudiante<br>
+			<input type="checkbox" name "Tipos_usuarios_idTipos_usuarios" value="4">Coordinador<br>
+			
+			<input type="submit" value="Registrar">
 
-				<label for="director">Director</label> 
-				<input type="radio" name="tipou" id="director" value="0"/> 
-				
-				<label for="docente">Docente</label>
-				<input type="radio" name="tipou" id="docente" value="1">
-				
-				<label for="estudiante">Estudiante</label>
-				<input type="radio" name="tipou" id="estudiante" value="2">
-
-				<label for="coordinador">Coordinador</label>
-				<input type="radio" name="tipou" id="coordinador" value="3">
-				
-				<input type="submit" value="Registrar">
-			</div>
 			</form>
 			<form action="index.html" method="POST">
 			<input type="submit" value="Cancelar">
