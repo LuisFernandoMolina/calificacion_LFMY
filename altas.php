@@ -1,15 +1,19 @@
 <?php
-	include 'conexion.php';
+	require 'conexion.php';
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
 	$Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
+
+	$Grupos_idGrupos=$_POST["Grupos_idGrupos"];
+
+	$Grupos_idGrupos= $_POST["Grupos_idGrupos"];
 	/*foreach ($_POST['Tipos_usuarios_idTipos_usuarios'] as $Tipos_usuarios_idTipos_usuarios);*/
 	$error_message = "";
 	//Validar usuario no este vacio
-	if($Nombre==""){ 
-		$error_message="Ingrese un nombre de usuario"; 
-	} 
+	if($Nombre==""){
+		$error_message="Ingrese un nombre de usuario";
+	}
     // Realiza la validación de contraseñas
 	if (strlen($clave) < 3) {
 		$error_message = "La contraseña es demasiado corta. Por favor, introduzca al menos 6 caracteres";
@@ -17,7 +21,7 @@
 		$error_message = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo";
 	}
 	echo $error_message;
-	
+
 	$verifica="SELECT * FROM usuarios WHERE Nombre='$Nombre'";
 	$verifica=mysqli_query($conexion,$verifica);
 	$fil=mysqli_num_rows($verifica);
@@ -26,7 +30,8 @@
 		}
 		else
 		{
-			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios) VALUES('$Nombre, $clave, $Tipos_usuarios_idTipos_usuarios')"; //falta el parametro de tipo de usuario
+			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios,Grupos_idGrupos) VALUES('$Nombre', '$clave', '$Tipos_usuarios_idTipos_usuarios','$Grupos_idGrupos')"; //falta el parametro de tipo de usuario
+			echo($insertar);
 			$resultado = mysqli_query($conexion, $insertar);
 			if(!$resultado){
 				echo 'Error al registrarse';
@@ -38,4 +43,3 @@
 		}
 
 ?>
-
