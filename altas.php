@@ -27,7 +27,7 @@
 		}
 		else
 		{
-			$insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios) VALUES('$Nombre', '$clave', '$Tipos_usuarios_idTipos_usuarios')"; //falta el parametro de tipo de usuario
+		  $insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios) VALUES('$Nombre', '$clave', '$Tipos_usuarios_idTipos_usuarios')"; //falta el parametro de tipo de usuario
 			echo($insertar);
 			$resultado = mysqli_query($conexion, $insertar);
 			if(!$resultado){
