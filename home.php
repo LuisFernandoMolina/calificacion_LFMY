@@ -71,7 +71,7 @@
 		</li>-->
 		<li><a href="#">Alumnos</a></li>
         <li><a href="#">Projects</a></li>
-		<li><a href="#">noticias</a></li>
+		<li><a href="#">Reportes</a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
