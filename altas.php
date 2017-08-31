@@ -37,7 +37,7 @@
 				echo 'Error al registrarse';
 			}
 			else{
-				echo 'Registro exitoso';
+					header("location:index.html");
 			}
 			mysqli_close($conexion);
 		}
