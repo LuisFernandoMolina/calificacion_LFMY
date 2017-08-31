@@ -71,7 +71,14 @@
 		</li>-->
 		<li><a href="#">Alumnos</a></li>
         <li><a href="#">Projects</a></li>
-		<li><a href="#">Reportes</a></li>
+    <li class="dropdown">
+     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reportes <span class="caret"></span></a>
+     <ul class="dropdown-menu">
+       <li><a href="#">Alumnos</a></li>
+       <li><a href="#">Grupos</a></li>
+       <li><a href="#">Materias</a></li>
+     </ul>
+   </li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
