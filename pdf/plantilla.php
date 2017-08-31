@@ -12,7 +12,7 @@ class PDF extends FPDF
     $this->Image ('images/logo.png',5,0,20);
     $this->SetFont('Arial','B',15);
     $this->Cell(30);
-    $this->Cell(120,10,"Registro de alumnos ",0,0,'C');
+    $this->Cell(120,10,"Constitucion de 1918 ",0,0,'C');
     $this->Ln(20);//salto de linea
   }
   function Footer()
