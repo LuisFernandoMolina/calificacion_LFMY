@@ -62,13 +62,6 @@
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">laboratorios</a></li>
 		<li><a href="#">Quienes Somos?</a>
-		<!--<ul>
-						<li><a href="">ingenieria en sistemas</a></li>
-						<li><a href="">mision</a></li>
-						<li><a href="">reticula</a></li>
-						<li><a href="">perfil del egresado</a></li>
-					</ul>
-		</li>-->
 		<li><a href="#">Alumnos</a></li>
         <li><a href="#">Projects</a></li>
     <li class="dropdown">
@@ -76,7 +69,7 @@
      <ul class="dropdown-menu">
        <li><a href="#">Alumnos</a></li>
        <li><a href="#">Grupos</a></li>
-       <li><a href="#">Materias</a></li>
+       <li><a href="/constitucion/calificacion_LFMY/pdf/Reporte_Materias.php">Materias</a></li>
      </ul>
    </li>
 
