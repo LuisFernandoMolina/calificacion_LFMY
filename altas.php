@@ -3,7 +3,7 @@
 
 	$Nombre = $_POST["Nombre"];
 	$clave = $_POST["clave"];
-	$Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
+	$Tipos_usuarios_idTipos_usuarios = 0;
 
 	/*foreach ($_POST['Tipos_usuarios_idTipos_usuarios'] as $Tipos_usuarios_idTipos_usuarios);*/
 	$error_message = "";

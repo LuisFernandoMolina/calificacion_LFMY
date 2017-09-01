@@ -16,15 +16,6 @@
 			<input type="password" placeholder="&#128272; Constrase�a" name="clave">
 			<input type="password" placeholder="&#128272; Confirmar Contrase�a" name="confclave">
 
-			<br>Seleccione el tipo de Usuario:<br>
-
-
-			<input type="number" placeholder="&#128272; Introduce la Opcion" name="Tipos_usuarios_idTipos_usuarios">
-
-			<br>1. Director<br>
-			<br>2. Docente<br>
-			<br>3. Estudiante<br>
-			<br>4. Coordinador<br>
 			
 			<input type="submit" value="Registrar">
 
