@@ -20,6 +20,10 @@ require 'conexion.php';
     </div>
 <div class="row">
   <a href="Nuevo_usuario.php" class="btn btn-primary">Nuevo Usuario</a>
+  <br>
+  </br>
+<div class="row">
+  <a href="VerUsuarios.php" class="btn btn-primary"> Ver usuarios Registrados</a>
 
 <br>
 <div class="row table-responsive">
@@ -43,3 +47,5 @@ require 'conexion.php';
 </body>
 
 </html>
+
+
