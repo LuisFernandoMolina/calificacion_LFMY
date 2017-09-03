@@ -12,7 +12,7 @@ if($Nombre==""){
   $error_message="Ingrese un nombre de usuario";
 }
   // Realiza la validación de contraseñas
-if (strlen($clave) < 3) {
+if (strlen($clave) < 4) {
   $error_message = " introduzca maximo 4 caracteres";
 }
 
@@ -56,9 +56,7 @@ $fil=mysqli_num_rows($verifica);
 						<?php } else { ?>
 						<h3>ERROR AL GUARDAR</h3>
 					<?php } ?>
-
 					<a href="DB_Usuarios.php" class="btn btn-primary">Regresar</a>
-
 				</div>
 			</div>
 		</div>
