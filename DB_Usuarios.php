@@ -23,7 +23,15 @@ require 'conexion.php';
   <br>
   </br>
 <div class="row">
-  <a href="VerUsuarios.php" class="btn btn-primary"> Ver usuarios Registrados</a>
+  <a href="VerUsuarios.php" class="btn btn-primary"> Ver Usuarios Registrados</a>
+  <br>
+  </br>
+<div class="row">
+  <a href="BorrarUsuarios.php" class="btn btn-pimary"> Borrar Usuarios Registrados</a>
+   <br>
+  </br>
+<div class="row">
+  <a href="ModificarUsuarios.php" class="btn btn-pimary"> Modificar Usuarios Registrados</a>
 
 <br>
 <div class="row table-responsive">
