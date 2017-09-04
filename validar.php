@@ -11,12 +11,15 @@
 	$filas=mysqli_num_rows($resultado);
 		if($filas>0){
 			//Variabled de section
-			header("location:menus.php");
+			//session_start();
+			//$_SESSION['usuario']=$username;
+			header("location:menus.php?$username");
 		}
 		else{
 			$regreso='index.html';
 			echo "Error en la autentificacion";
 			header("location: $regreso");
+
 		}
 	mysqli_free_result($resultado);
 	mysqli_close($conexion);

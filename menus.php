@@ -13,9 +13,11 @@
      break;
      case 0:
       header("location:home.php");
+
      break;
      case 1:
       header("location:home.php");
+
      break;
      default:
      echo "No lo encontro";
@@ -23,6 +25,9 @@
   }
 }
 else {
+  session_destroy();
   $session=false;
 }
+mysqli_free_result($datos);
+mysqli_close($conexion);
 ?>
