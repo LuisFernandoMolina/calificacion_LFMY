@@ -1,5 +1,7 @@
 <?php
 require 'conexion.php';
+  $query="SELECT * FROM usuarios";
+  $query=mysqli_query($conexion,$query);
 ?>
 <html lang="es">
 
@@ -36,15 +38,25 @@ require 'conexion.php';
   <table class="table table-striped">
     <thead>
       <tr>
-        <th> </th>
-        <th> </th>
         <th> ID</th>
         <th> Nombre usuario</th>
         <th> Clave </th>
         <th> Tipo de Usuario</th>
         <th> </th>
-        <th> </th>
       </tr>
+      <?php
+      while($result=mysqli_fetch_array($query))
+      {
+        echo
+        "<tr >
+          <td>".$result['idUsuarios']."</td>
+          <td>".$result['Nombre']."</td>
+          <td>".$result['clave']."</td>
+          <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td>
+        </tr>";
+      }
+     ?>
+
     </thead>
   </table>
 </body>
