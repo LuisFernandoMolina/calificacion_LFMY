@@ -15,7 +15,7 @@
 
 			<input type="password" placeholder="&#128272; Constraseña" name="clave">
 			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
-			<input type="button" value="Registrar">
+			<input type="submit" value="Registrar">
 			<a href="index.html"><input type="button" value="Cancelar"></a>
 			</form>
 
