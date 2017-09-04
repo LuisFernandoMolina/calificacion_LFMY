@@ -50,7 +50,7 @@ require 'conexion.php';
           <td>
             <a href="" class="btn btn-primary">Modificar</a>
           </td>
-          <td><a href="eliminarU.php" class="btn btn-primary">Eliminar</a></td>
+          <td><a href="BorrarUsuarios.php" class="btn btn-primary">Eliminar</a></td>
           </form>
       <?php "</tr>"  ;
       }?>
