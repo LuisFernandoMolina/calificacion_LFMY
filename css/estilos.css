@@ -34,7 +34,6 @@ input {
 
 }
 input[type="submit"],[type="button"]{
-	text-decoration: none;
 	background: linear-gradient(#FFDA63,#FFB940);
 	border:0;
 	color:brown;
@@ -49,6 +48,9 @@ input[type="submit"],[type="button"]:hover{
 }
 input[type="submit"],[type="button"]:active{
 	transform:scale(0.95);
+}
+#regi{
+		text-decoration: none;
 }
 
 @media (max-width:768px){
