@@ -23,10 +23,6 @@ require 'conexion.php';
   <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
   <br>
   </br>
-<div class="row">
-  <a href="VerUsuarios.php" class="btn btn-primary"> Ver Usuarios Registrados</a>
-  <br>
-  </br>
 
 
 <br>

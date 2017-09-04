@@ -1,12 +1,11 @@
 <?php
 require 'conexion.php'
-$IdUsuario=$_POST['idUsuario'];
+$IdUsuarios=$_POST['idUsuarios'];
 echo $idUsuario;
-  $q = "DELETE * FROM usuarios WHERE idUsuarios='$idUsuarios'";
-    $rs = mysql_query($q);
-    if($rs == false) {
-	     echo '<p>Error al eliminar los campos en la tabla.</p>';
+$query = "DELETE * FROM usuarios WHERE idUsuarios='$idUsuarios' LIMIT 1";
+    if(mysqli_query($conexion, $query)) {
+	     echo '<p>Usuario Borrado Exitosamente.</p>';
      }else{
-	      echo '<p>Los datos se han eliminado correctamente.</p>';
+	      echo '<p>El usuario no se pudo borrar.</p>';
     }
  ?>
