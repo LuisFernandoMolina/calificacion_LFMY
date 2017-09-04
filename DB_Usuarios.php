@@ -2,6 +2,7 @@
 require 'conexion.php';
   $query="SELECT * FROM usuarios";
   $query=mysqli_query($conexion,$query);
+
 ?>
 <html lang="es">
 
@@ -40,16 +41,20 @@ require 'conexion.php';
         <th colspan="2"> Option</th>
         <th> </th>
       </tr>
+      <form class="" action="eliminarU.php" method="post">
       <?php
       while($result=mysqli_fetch_array($query))
       {
         echo
         "<tr >
-          <td>".$result['idUsuarios']."</td>
+          <td name='idUsuaio' id='idUsuario'>".$result['idUsuarios']."</td>
           <td>".$result['Nombre']."</td>
           <td>".$result['clave']."</td>
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "?>
-          <td><a href="#" class="btn btn-primary">Modificar</a></td>
+          <td>
+            <a href="eliminarU.php" class="btn btn-primary">Modificar</a>
+            </form>
+          </td>
           <td><a href="#" class="btn btn-primary">Eliminar</a></td>
       <?php "</tr>"  ;
       }?>
