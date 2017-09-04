@@ -26,12 +26,7 @@ require 'conexion.php';
   <a href="VerUsuarios.php" class="btn btn-primary"> Ver Usuarios Registrados</a>
   <br>
   </br>
-<div class="row">
-  <a href="BorrarUsuarios.php" class="btn btn-pimary"> Borrar Usuarios Registrados</a>
-   <br>
-  </br>
-<div class="row">
-  <a href="ModificarUsuarios.php" class="btn btn-pimary"> Modificar Usuarios Registrados</a>
+
 
 <br>
 <div class="row table-responsive">
@@ -42,6 +37,7 @@ require 'conexion.php';
         <th> Nombre usuario</th>
         <th> Clave </th>
         <th> Tipo de Usuario</th>
+        <th colspan="2"> Option</th>
         <th> </th>
       </tr>
       <?php
@@ -52,11 +48,11 @@ require 'conexion.php';
           <td>".$result['idUsuarios']."</td>
           <td>".$result['Nombre']."</td>
           <td>".$result['clave']."</td>
-          <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td>
-        </tr>";
-      }
-     ?>
-
+          <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "?>
+          <td><a href="#" class="btn btn-primary">Modificar</a></td>
+          <td><a href="#" class="btn btn-primary">Eliminar</a></td>
+      <?php "</tr>"  ;
+      }?>
     </thead>
   </table>
 </body>
