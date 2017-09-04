@@ -54,9 +54,5 @@ $resultado = $conexion->query($sql);
         <?php } ?>
       </tbody>
   </table>
-
-
-
 </body>
-
 </html>

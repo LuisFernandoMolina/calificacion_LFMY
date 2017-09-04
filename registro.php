@@ -11,11 +11,10 @@
 	<body>
 		<form action="altas.php" method="POST" >
 			<h2>Nuevo Registro</h2>
-			<input type="text" placeholder="&#128104; Usuario" name="Nombre">
-
-			<input type="password" placeholder="&#128272; Constraseña" name="clave">
-			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
-			<input type="button" value="Registrar">
+			<input type="text" placeholder="&#128104; Usuario" name="Nombre" required>
+			<input type="password" placeholder="&#128272; Constraseña" name="clave" required>
+			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave" required>
+			<input type="submit" value="Registrar">
 			<a href="index.html"><input type="button" value="Cancelar"></a>
 			</form>
 
