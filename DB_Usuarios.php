@@ -1,6 +1,5 @@
 <?php
 require 'conexion.php';
-
 ?>
 <html lang="es">
 
@@ -48,5 +47,4 @@ require 'conexion.php';
     </thead>
   </table>
 </body>
-
 </html>
