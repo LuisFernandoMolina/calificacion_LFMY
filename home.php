@@ -69,7 +69,7 @@
      <ul class="dropdown-menu">
        <li><a href="#">Alumnos</a></li>
        <li><a href="#">Grupos</a></li>
-       <li><a href="/constitucion/calificacion_LFMY/pdf/Reporte_Materias.php">Materias</a></li>
+       <li><a href="/constitucion/calificacion_LFMY/Reporte_Materias.php">Materias</a></li>
      </ul>
    </li>
 
@@ -84,7 +84,7 @@
 <div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="/constitucion/calificacion_LFMY/pdf">PDF</a></p>
+      <p><a href="/constitucion/calificacion_LFMY/GenerarPDF">PDF</a></p>
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
     </div>
