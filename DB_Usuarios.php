@@ -41,7 +41,7 @@ require 'conexion.php';
         <th colspan="2"> Option</th>
         <th> </th>
       </tr>
-      <form class="" action="eliminarU.php" method="post">
+      <form class="" action="eliminarU.php" method="POST">
       <?php
       while($result=mysqli_fetch_array($query))
       {
