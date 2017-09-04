@@ -17,6 +17,7 @@ require 'conexion.php';
     </div>
 <div class="row">
   <a href="Nuevo_usuario.php" class="btn btn-primary">Nuevo Usuario</a>
+  <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
   <br>
   </br>
 <div class="row">

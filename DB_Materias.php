@@ -26,6 +26,7 @@ $resultado = $conexion->query($sql);
     </div>
 <div class="row">
   <a href="Nuevo_usuario.php" class="btn btn-primary">Agregar Materias</a>
+  <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
 
 <br>
 <div class="row table-responsive">
