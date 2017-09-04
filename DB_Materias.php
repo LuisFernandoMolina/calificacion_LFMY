@@ -28,7 +28,8 @@ $resultado = $conexion->query($sql);
   <h2 style="text-align:center">Materias Ingenieria en Sistemas</h2>
     </div>
 <div class="row">
-  <a href="Nuevo_usuario.php" class="btn btn-primary">Agregar Materias</a>
+  <a href="Nueva_Materia.php" class="btn btn-primary">Agregar Materias</a>
+  <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
 
 <br>
 <div class="row table-responsive">
