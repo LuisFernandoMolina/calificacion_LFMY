@@ -40,6 +40,7 @@ input[type="submit"],[type="button"]{
 	cursor:pointer;
 	border-radius:20px;
 	margin-bottom:0;
+	text-decoration: none;
 }
 input[type="submit"],[type="button"]:hover{
 	opacity:1;
@@ -52,23 +53,4 @@ input[type="submit"],[type="button"]:active{
 	form{
 		width:75%;
 	}
-}
-//Check box
-input[type="radio"], 
-input[type="checkbox"] {
-    display: none;
-}
-label:before {
-font-family: 'FontAwesome';
-width: 1.25em;
-display: inline-block;
-}
-input[type="radio"] + label:before  {
-content: "\f10c"; /* circle-blank */
-}
-input[type="radio"]:checked + label:before {
-content: "\f111"; /* circle */
-}
-input[type="checkbox"] + label:before {
-content: "\f096"; /* check-empty */
 }
