@@ -3,7 +3,7 @@
   if(isset($_SESSION['usuario']) && !empty($_SESSION['usuario'])){ //revisamos que haya iniciado sesion
     require 'conexion.php'; //aqui cargas la coneccion a tu BD
     $session =true;
-    $sql = mysql_query("SELECT * FROM usuarios WHERE Nombre='Fer'"); //seleccionamos al usuario que inició sesión
+    $sql = mysql_query("SELECT * FROM usuarios WHERE Nombre='.$_SESSION['usuario'].'"); //seleccionamos al usuario que inició sesión
     echo $_SESSION['usuario'];
     echo $sql;
     $datos = mysqli_fetch_array($sql,1);
