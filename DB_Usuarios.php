@@ -52,10 +52,10 @@ require 'conexion.php';
           <td>".$result['clave']."</td>
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "?>
           <td>
-            <a href="eliminarU.php" class="btn btn-primary">Modificar</a>
-            </form>
+            <a href="" class="btn btn-primary">Modificar</a>
           </td>
-          <td><a href="#" class="btn btn-primary">Eliminar</a></td>
+          <td><a href="eliminarU.php" class="btn btn-primary">Eliminar</a></td>
+          </form>
       <?php "</tr>"  ;
       }?>
     </thead>
