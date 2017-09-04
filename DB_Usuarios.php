@@ -2,7 +2,6 @@
 require 'conexion.php';
 
 ?>
-
 <html lang="es">
 
 <head>
@@ -10,7 +9,6 @@ require 'conexion.php';
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
-
 
 </head>
 <body>
@@ -49,11 +47,6 @@ require 'conexion.php';
       </tr>
     </thead>
   </table>
-
-
-
 </body>
 
 </html>
-
-
