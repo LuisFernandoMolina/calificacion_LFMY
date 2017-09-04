@@ -4,13 +4,8 @@
 <?php
 require 'conexion.php';
 $where="";
-$sql="SELECT materias.idMaterias,materias.Nombre_materia,usuarios.Nombre,grupos.Clave_grupo,grupos.Horario,grupos.Salon
- FROM materias,usuarios,tipos_usuarios,grupos,usuario_grupo
- WHERE materias.idMaterias=tipos_usuarios.idTipos_Usuarios
- AND tipos_usuarios.idTipos_Usuarios=grupos.idGrupos
- AND grupos.idGrupos=usuarios.idUsuarios
- AND tipos_usuarios.idTipos_Usuarios=1
- AND tipos_usuarios.idTipos_Usuarios=usuario_grupo.Grupos_idGrupos";
+$sql="SELECT materias.idMaterias,materias.Nombre_materia,materias.Horario,materias.Salon
+ FROM materias";
 $resultado = $conexion->query($sql);
 ?>
 
@@ -36,24 +31,23 @@ $resultado = $conexion->query($sql);
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Materia</th>
-        <th>Profesor</th>
+          <th>ID</th>
+          <th>Materia</th>
           <th>Horario</th>
           <th>Salon</th>
 
       </tr>
     </thead>
     <tbody>
+
       <?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) { ?>
         <tr>
           <td> <?php  echo $row['idMaterias']; ?>
           <td> <?php  echo $row['Nombre_materia']; ?>
-          <td> <?php  echo $row['Nombre']; ?>
           <td> <?php  echo $row['Horario']; ?>
           <td> <?php  echo $row['Salon']; ?>
-            <td><a href="Modificar_Materias.php?id=<?php echo $row['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
-								<td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
+          <td><a href="PruebaModificar.php?id=<?php echo $row['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+					<td><a href="#" data-href="PruebaBorrar.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 							</tr>
 						<?php } ?>
       </tbody>
