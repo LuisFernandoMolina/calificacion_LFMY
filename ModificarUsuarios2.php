@@ -13,3 +13,4 @@
 <body>
 <h1><center>Moficacion de Usuarios</center></h1>
 <form action="modificarU.php">
+<label>idUsuarios: </label><br />
