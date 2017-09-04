@@ -13,16 +13,10 @@
 			<h2>Nuevo Registro</h2>
 			<input type="text" placeholder="&#128104; Usuario" name="Nombre">
 
-			<input type="password" placeholder="&#128272; Constrase�a" name="clave">
-			<input type="password" placeholder="&#128272; Confirmar Contrase�a" name="confclave">
-
-			
-			<input type="submit" value="Registrar">
-
-			</form>
-			<form action="index.html" method="POST">
-			<input type="submit" value="Cancelar">
-			</form
+			<input type="password" placeholder="&#128272; Constraseña" name="clave">
+			<input type="password" placeholder="&#128272; Confirmar Contraseña" name="confclave">
+			<input type="button" value="Registrar">
+			<a href="index.html"><input type="button" value="Cancelar"></a>
 			</form>
 
 	</body>
