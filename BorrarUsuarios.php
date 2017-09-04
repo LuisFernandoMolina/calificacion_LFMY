@@ -14,6 +14,8 @@
 			<input type="text" placeholder="&#128104; idUsuarios" name="idUsuarios" required>
 			<input type="submit" value="Borrar">
 			</form>
-
+	    <form action="DB_Usuarios.php" method="POST">
+			<input type="submit" value="Cancelar">
+			</form>
 	</body>
 <?php>

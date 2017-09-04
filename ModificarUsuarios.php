@@ -9,10 +9,13 @@
 			<link rel="stylesheet" href="css\estilos.css">
 	</head>
 	<body>
-		<form action="eliminarU.php" method="POST" >
+		<form action="ModificarUsuarios2.php" method="POST" >
 			<h2>Confirma el id que deseas Modificar</h2>
 			<input type="text" placeholder="&#128104; idUsuarios" name="idUsuarios" required>
 			<input type="submit" value="Modificar">
+			</form>
+		<form action="DB_Usuarios.php" method="POST">
+			<input type="submit" value="Cancelar">
 			</form>
 
 	</body>
