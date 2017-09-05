@@ -14,11 +14,18 @@
      break;
      case '0':
       header("location:home.php");
-
      break;
      case '1':
-      header("location:homeadmin.php");
-
+      header("location:homedirector.php");
+     break;
+     case '2':
+      header("location:homedocente.php");
+     break;
+     case '3':
+      header("location:homeestudiante.php");
+     break;
+     case '4':
+      header("location:homecoordinador.php");
      break;
      default:
      echo "No lo encontro";
