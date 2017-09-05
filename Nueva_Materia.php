@@ -21,10 +21,17 @@
 				</div>
 
 				<div class="form-group">
-					<label for="grupo" class="col-sm-2 control-label">Id Grupo</label>
+					<label for="Nombre" class="col-sm-2 control-label">Horario</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="grupo" name="grupo" placeholder="grupo">
+						<input type="text" class="form-control" id="Horario" name="Horario" placeholder="Horario" required>
 					</div>
+				</div>
+				<div class="form-group">
+					<label for="Nombre" class="col-sm-2 control-label">Salon</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="Salon" name="Salon" placeholder="Salon" required>
+					</div>
+				</div>
 				</div>
 				</div>
 				<div class="form-group">

@@ -25,7 +25,10 @@ $resultado = $conexion->query($sql);
 <div class="row">
   <a href="Nueva_Materia.php" class="btn btn-primary">Agregar Materias</a>
   <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
-
+  <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
+  					<b>Nombre: </b><input type="text" id="campo" name="campo" />
+  					<input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-info" />
+  				</form>
 <br>
 <div class="row table-responsive">
   <table class="table table-striped">
@@ -46,8 +49,8 @@ $resultado = $conexion->query($sql);
           <td> <?php  echo $row['Nombre_materia']; ?>
           <td> <?php  echo $row['Horario']; ?>
           <td> <?php  echo $row['Salon']; ?>
-          <td><a href="PruebaModificar.php?id=<?php echo $row['id']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
-					<td><a href="#" data-href="PruebaBorrar.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
+          <td><a href="PruebaModificar.php?id=<?php echo $row['idMaterias']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+					<td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['idMaterias']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 							</tr>
 						<?php } ?>
       </tbody>
