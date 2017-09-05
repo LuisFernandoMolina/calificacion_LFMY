@@ -1,11 +1,14 @@
 <?php
   session_start();
   $usuario=$_SESSION['usuario'];
-  if(isset($_SESSION['usuario']) && !empty($_SESSION['usuario'])){ //revisamos que haya iniciado sesion
+//  $usuario=($_GET['username']);
+  if(isset($usuario) && !empty($usuario)){ //revisamos que haya iniciado sesion
     require 'conexion.php'; //aqui cargas la coneccion a tu BD
     $sql = mysqli_query($conexion,"SELECT Tipos_usuarios_idTipos_usuarios FROM usuarios WHERE Nombre='$usuario'"); //seleccionamos al usuario que inició sesión
-    $datos = mysql_fetch_object($sql);
-  switch($datos){
+    $datos = mysqli_fetch_array($sql);
+    echo $usuario;
+    echo $datos['Tipos_usuarios_idTipos_usuarios'];
+  switch($datos['Tipos_usuarios_idTipos_usuarios']){
      case '100':
          header("location:homeadmin.php");
      break;
@@ -23,6 +26,7 @@
   }
   mysqli_free_result($datos);
 	mysqli_close($conexion);
+  unset($usuario);
 }
 else {
   $session=false;
