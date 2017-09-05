@@ -11,9 +11,9 @@
 	$filas=mysqli_num_rows($resultado);
 		if($filas>0){
 			//Variabled de section
-			//session_start();
-			//$_SESSION['usuario']=$username;
-			header("location:menus.php?$username");
+			
+			$_SESSION['usuario']=$username;
+			header("location:menus.php");
 		}
 		else{
 			$regreso='index.html';
