@@ -4,6 +4,14 @@
 <?php
 require 'conexion.php';
 $where="";
+if(!empty($_POST))
+	{
+		$valor = $_POST['campo'];
+		if(!empty($valor)){
+			$where = "WHERE nombre LIKE '%$valor'";
+		}
+	}
+
 $sql="SELECT materias.idMaterias,materias.Nombre_materia,materias.Horario,materias.Salon
  FROM materias";
 $resultado = $conexion->query($sql);
@@ -68,7 +76,8 @@ $resultado = $conexion->query($sql);
 					</div>
 
 					<div class="modal-body">
-						¿Desea eliminar este registro de la base de Datos?
+						<?php echo ($row['idMaterias']);?>
+             ¿Desea eliminar este registro de la base de Datos?
 					</div>
 
 					<div class="modal-footer">
