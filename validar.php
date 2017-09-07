@@ -13,7 +13,7 @@
 			//Variabled de section
 			session_start();
 			$_SESSION['usuario']=$username;
-			$_SESSION['tipo_usuario']=100;
+			$_SESSION['tipo_usuario']=100;///Aqui lleva un array
 			header("location:home.php?$username");
 		}
 		else{

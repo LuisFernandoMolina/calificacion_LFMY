@@ -47,7 +47,7 @@ function menu(){
       echo "<li>Usuarios</li>";*/
     echo "<li><a>Usuarios </li></a>";
     echo "<li>Materias</li>";
-    echo "<li>Grupos</li>";
+    echo "<li><a>Grupos</a></li>";
     echo "<li><a>Reportes </a></li>";
     echo "<ul>";
     echo "<li><a>X</a></ul>";
