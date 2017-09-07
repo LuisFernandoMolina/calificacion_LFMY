@@ -7,7 +7,7 @@ $query= " SELECT usuarios.idUsuarios,usuarios.Nombre,grupos.Clave_grupo,materias
  WHERE usuarios.idUsuarios=grupos.idGrupos
  AND grupos.idGrupos=materias.idMaterias
  AND materias.idMaterias=calificacion.idCalificacion";
-$resultado=$mysqli->query($query);
+$resultado=$conexion->query($query);
 $pdf= new PDF();
 //$pdf->AliasPages();
 $pdf->AddPage();

@@ -63,9 +63,6 @@ require "funciones.php"; ?>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">laboratorios</a></li>
-		    <li><a href="#">Quienes Somos?</a></li>
-        <li><a href="#">Vamonos</a></li>
         <?php menu(); ?>
      </ul>
 

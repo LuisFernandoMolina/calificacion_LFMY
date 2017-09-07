@@ -9,7 +9,7 @@ $query= " SELECT materias.Nombre_materia,usuarios.Nombre,grupos.Clave_grupo,grup
  AND grupos.idGrupos=usuarios.idUsuarios
  AND tipos_usuarios.idTipos_Usuarios=1
  AND tipos_usuarios.idTipos_Usuarios=usuario_grupo.Grupos_idGrupos ";
-$resultado=$mysqli->query($query);
+$resultado=$conexion->query($query);
 $pdf= new PDF();
 //$pdf->AliasPages();
 $pdf->AddPage();
