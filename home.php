@@ -1,3 +1,6 @@
+<?php
+session_start();
+require "funciones.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,21 +64,17 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">laboratorios</a></li>
-		<li><a href="#">Quienes Somos?</a>
-		<li><a href="#">Alumnos</a></li>
-        <li><a href="#">Projects</a></li>
-    <li class="dropdown">
-     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reportes <span class="caret"></span></a>
-     <ul class="dropdown-menu">
-       <li><a href="#">Alumnos</a></li>
-       <li><a href="#">Grupos</a></li>
-       <li><a href="/constitucion/calificacion_LFMY/Reporte_Materias.php">Materias</a></li>
+		    <li><a href="#">Quienes Somos?</a></li>
+        <li><a href="#">Vamonos</a></li>
+        <?php menu(); ?>
      </ul>
-   </li>
+
+
+
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
       </ul>
     </div>
   </div>

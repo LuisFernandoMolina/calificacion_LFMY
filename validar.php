@@ -13,7 +13,8 @@
 			//Variabled de section
 			session_start();
 			$_SESSION['usuario']=$username;
-			header("location:menus.php?$username");
+			$_SESSION['tipo_usuario']=100;
+			header("location:home.php?$username");
 		}
 		else{
 			$regreso='index.html';
