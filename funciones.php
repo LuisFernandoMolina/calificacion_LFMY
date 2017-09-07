@@ -38,17 +38,19 @@ function menu(){
   if(!$_SESSION['usuario']){
    echo "Debes <a href='index.html'> loguearte</a>";
   } else{
-    if ($_SESSION['tipo_usuario']==100){ 
+    if ($_SESSION['tipo_usuario']==100){
       /*echo "<li>Reportes</li>";
         echo "<ul>";
           echo "<li>Alumnos</li>";
             echo "<li>Materias</li>";
             echo "</ul>";
       echo "<li>Usuarios</li>";*/
-    echo "<li> Usuarios </li>";
+    echo "<li><a>Usuarios </li></a>";
     echo "<li>Materias</li>";
     echo "<li>Grupos</li>";
-    echo "<li> Reportes </li>";
+    echo "<li><a>Reportes </a></li>";
+    echo "<ul>";
+    echo "<li><a>X</a></ul>";
 
     } else{
         echo "<li>Mis calificaciones</li>";
