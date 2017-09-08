@@ -30,17 +30,27 @@
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="Salon" name="Salon" placeholder="Salon" required>
 					</div>
-					<br>
-				<div class="col-sm-10">
-					<label for="form-group">IdGrupo</label><br>
-						<select class="form-control" name="idGrupo" id="idGrupo">
-							<option value="" re></option>
-							<?php require 'funciones.php';
-							grupos();
-							?>
-						</select>
-
+				</div>
+				<div class="form-group">
+					<label for="grupos" class="col-sm-2 control-label">Grupo</label>
+						<div class="col-sm-10">
+							<select name="idGrupo" id="idGrupo" class="form-control" placeholder="Grupo" required>
+								<option value=""></option>
+								<?php require 'funciones.php';
+								grupos();
+								?>
+							</select>
 						</div>
+				</div>
+				<div class="form-group">
+							<label for="" class="col-sm-2 control-label">IdCalificacion</label>
+							<div class="col-sm-10">
+								<select class="form-control" name="calificacion" id="calificaion">
+									<option value=""></option>
+									 calificacion();
+								</select>
+							</div>
+
 				</div>
 				</div>
 				</div>

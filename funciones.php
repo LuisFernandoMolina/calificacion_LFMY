@@ -5,10 +5,27 @@ function grupos(){
   $sql="SELECT * FROM grupos";
   $idgrupo=mysqli_query($conexion,$sql);
   while ($resultado=mysqli_fetch_array($idgrupo)) {
-    $id=$resultado['idGrupos'];
+    $grupo=$resultado['Clave_grupo'];
+    $id=$resultado['idMaterias'];
+    echo "<option value='$id'>$grupo</option>";
+  }
+  unset($id);
+  unset($resultado);
+  unset($sql);
+}
+function calificacion(){
+  //require 'conexion.php';
+  $sql="SELECT * FROM calificacion";
+  $calificacion=mysqli_query($conexion,$sql);
+  while ($res=mysqli_fetch_array($calificacion)) {
+    $id=$res['idCalificacion'];
     echo "<option value='$id'>$id</option>";
   }
+  unset($calificacion);
+  unset($resultado);
 }
+
+
 function menu(){
   if(!$_SESSION['usuario']){
    echo "Debes <a href='index.html'> loguearte</a>";
