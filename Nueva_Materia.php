@@ -34,10 +34,12 @@
 				<div class="col-sm-10">
 					<label for="form-group">IdGrupo</label><br>
 						<select class="form-control" name="idGrupo" id="idGrupo">
-							<option value="matutino">Matutino</option>
-							<option value="vespertino">Vespertino</option>
-							<option value="nocturno">Nocturno</option>
+							<option value="" re></option>
+							<?php require 'funciones.php';
+							grupos();
+							?>
 						</select>
+
 						</div>
 				</div>
 				</div>

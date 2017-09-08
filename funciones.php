@@ -1,6 +1,14 @@
 
 <?php
-
+function grupos(){
+  require 'conexion.php';
+  $sql="SELECT * FROM grupos";
+  $idgrupo=mysqli_query($conexion,$sql);
+  while ($resultado=mysqli_fetch_array($idgrupo)) {
+    $id=$resultado['idGrupos'];
+    echo "<option value='$id'>$id</option>";
+  }
+}
 function menu(){
   if(!$_SESSION['usuario']){
    echo "Debes <a href='index.html'> loguearte</a>";
