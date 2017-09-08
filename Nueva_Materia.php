@@ -30,6 +30,15 @@
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="Salon" name="Salon" placeholder="Salon" required>
 					</div>
+					<br>
+				<div class="col-sm-10">
+					<label for="form-group">IdGrupo</label><br>
+						<select class="form-control" name="idGrupo" id="idGrupo">
+							<option value="matutino">Matutino</option>
+							<option value="vespertino">Vespertino</option>
+							<option value="nocturno">Nocturno</option>
+						</select>
+						</div>
 				</div>
 				</div>
 				</div>
