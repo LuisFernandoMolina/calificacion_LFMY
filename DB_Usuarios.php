@@ -41,16 +41,17 @@ require 'conexion.php';
       <?php
       while($result=mysqli_fetch_array($query))
       {
+        $idUsuarios = $result ['idUsuarios'];
         echo
         "<tr >
-          <td name='idUsuaio' id='idUsuario'>".$result['idUsuarios']."</td>
+          <td name='idUsuario' id='idUsuario'>".$result['idUsuarios']."</td>
           <td>".$result['Nombre']."</td>
           <td>".$result['clave']."</td>
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "?>
           <td>
             <a href="ModificarUsuarios.php" class="btn btn-primary">Modificar</a>
           </td>
-          <td><a href="BorrarUsuarios.php" class="btn btn-primary">Eliminar</a></td>
+          <td><a href="BorrarUsuarios.php?$idUsuarios" class="btn btn-primary">Eliminar</a></td>
           </form>
       <?php "</tr>"  ;
       }?>
