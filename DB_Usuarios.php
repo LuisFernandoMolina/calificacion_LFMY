@@ -37,9 +37,9 @@ require 'conexion.php';
         <th colspan="2"> Option</th>
         <th> </th>
       </tr>
-      <form class="" action="eliminarU.php" method="POST">
 
       <?php
+
       while($result=mysqli_fetch_array($query))
       {
         $idUsuarios = $result ['idUsuarios'];
@@ -49,16 +49,21 @@ require 'conexion.php';
           <td>".$result['Nombre']."</td>
           <td>".$result['clave']."</td>
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "
-
       ?>
-       
+      <td>
+
+        <form action="eliminarU.php" method="POST">
+        <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
+        <button class="btn btn-primary" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
+      </td>
+
           <td>
           </td>
 
-          <form action="eliminarU.php" method="POST">
-          <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-          <button class="mult_submit" type="submit" name="submit_mult" value="Borrar" title="Borrar">
-        
+
+
+
+
           <td><a href="ModificarUsuarios.php?$idUsuarios" class="btn btn-primary">Modificar</a></td>
           </form>
       <?php "</tr>"  ;
