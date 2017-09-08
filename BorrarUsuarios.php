@@ -1,4 +1,5 @@
 <?php>
+
  $idusuario=($GET['variable']);
  echo $idusuario;
 	<head>
