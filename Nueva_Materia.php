@@ -34,25 +34,26 @@
 				<div class="form-group">
 					<label for="grupos" class="col-sm-2 control-label">Grupo</label>
 						<div class="col-sm-10">
-							<select name="idGrupo" id="idGrupo" class="form-control" placeholder="Grupo" required>
+							<select name="idGrupo" id="idGrupo"  placeholder="Grupo" class="form-control"  required>
 								<option value=""></option>
 								<?php require 'funciones.php';
-								grupos();
+									grupos();
 								?>
 							</select>
 						</div>
 				</div>
-				<div class="form-group">
+			<div class="form-group">
 							<label for="" class="col-sm-2 control-label">IdCalificacion</label>
 							<div class="col-sm-10">
 								<select class="form-control" name="calificacion" id="calificaion">
 									<option value=""></option>
-									 calificacion();
+									<?php
+									 	calificacion();
+									?>
 								</select>
 							</div>
-
 				</div>
-				</div>
+			</div>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
@@ -60,6 +61,10 @@
 						<button type="submit" class="btn btn-primary">Guardar</button>
 					</div>
 				</div>
+
+
+
+
 			</form>
 		</div>
 	</body>

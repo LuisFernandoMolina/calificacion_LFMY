@@ -1,5 +1,6 @@
 
 <?php
+
 function grupos(){
   require 'conexion.php';
   $sql="SELECT * FROM grupos";
@@ -12,18 +13,23 @@ function grupos(){
   unset($id);
   unset($resultado);
   unset($sql);
-}
+  mysqli_close($conexion);
+};
+
 function calificacion(){
-  //require 'conexion.php';
-  $sql="SELECT * FROM calificacion";
-  $calificacion=mysqli_query($conexion,$sql);
-  while ($res=mysqli_fetch_array($calificacion)) {
+  include 'conexion.php';
+  $rql="SELECT * FROM calificacion";
+  $calif=mysqli_query($conexion,$rql);
+  while ($res=mysqli_fetch_array($calif)) {
     $id=$res['idCalificacion'];
     echo "<option value='$id'>$id</option>";
   }
-  unset($calificacion);
-  unset($resultado);
+  unset($calif);
+  unset($res);
+  unset($rql);
+  mysqli_close($conexion);
 }
+
 
 
 function menu(){
