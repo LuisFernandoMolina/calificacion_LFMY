@@ -54,8 +54,11 @@ require 'conexion.php';
        
           <td>
           </td>
-          <td><a href="BorrarUsuarios.php?$variable" class="btn btn-primary">Eliminar</a></td>
 
+          <form action="eliminarU.php" method="POST">
+          <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
+          <button class="mult_submit" type="submit" name="submit_mult" value="Borrar" title="Borrar">
+        
           <td><a href="ModificarUsuarios.php?$idUsuarios" class="btn btn-primary">Modificar</a></td>
           </form>
       <?php "</tr>"  ;
