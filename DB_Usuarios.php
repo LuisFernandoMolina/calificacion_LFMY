@@ -51,13 +51,12 @@ require 'conexion.php';
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "
 
       ?>
-        <input type="text" name="idusuario" value="<?php $variable=$result['idUsuarios']; echo $variable?>">
+       
           <td>
-            <a href="ModificarUsuarios.php" class="btn btn-primary" value=<?php $variable=$result['idUsuarios']; echo $variable?>Modificar</a>
           </td>
           <td><a href="BorrarUsuarios.php?$variable" class="btn btn-primary">Eliminar</a></td>
 
-          <td><a href="BorrarUsuarios.php?$idUsuarios" class="btn btn-primary">Eliminar</a></td>
+          <td><a href="ModificarUsuarios.php?$idUsuarios" class="btn btn-primary">Modificar</a></td>
           </form>
       <?php "</tr>"  ;
       }?>
