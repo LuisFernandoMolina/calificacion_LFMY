@@ -63,6 +63,8 @@ require "funciones.php"; ?>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#">Eventos</a></li>
+        <li class="active"><a href="#">Calendario</a></li>
         <?php menu(); ?>
      </ul>
 
@@ -80,12 +82,12 @@ require "funciones.php"; ?>
 <div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="/constitucion/calificacion_LFMY/GenerarPDF">PDF</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+
+      <p><a href="#"> </a></p>
+      <p><a href="#"> </a></p>
     </div>
     <div class="col-sm-8 text-left">
-      <h1>Welcome</h1>
+
 
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -101,7 +103,7 @@ require "funciones.php"; ?>
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="images/1.jpg" alt="Los Angeles" style="width:100%;">
+            <img src="images/uno.jpg" alt="Los Angeles" style="width:100%;">
           </div>
 
           <div class="item">
@@ -135,17 +137,23 @@ require "funciones.php"; ?>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>ADS</p>
+        <p>  </p>
       </div>
       <div class="well">
-        <p>ADS</p>
+        <p>   </p>
       </div>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Essto</p>
+  <p>Campus Centro
+  Av. Tecnológico s/n
+esq. Gral. Mariano Escobedo.
+Colonia Centro Histórico
+<p>C.P. 76000, Querétaro, Querétaro.</p>
+<p>Tel. (442) 227 44 00	Campus Norte</p>
+<p>01 (442) 243 55 92</p>
 </footer>
 </body>
 </html>
