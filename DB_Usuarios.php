@@ -57,10 +57,7 @@ require 'conexion.php';
 
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-
-      </form>
-
-        <button class="btn btn-primary" data-toggle="modal" data-target="#confirm-delete" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
+        <a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a>
         </form>
 
       </td>
@@ -74,19 +71,14 @@ require 'conexion.php';
           Modificar
           </td>
 
-          <form action="ModificarUsuarios2.php" method="POST">
-          <input type="hidden" name="" value="<?php echo $result['idUsiarios'];?>"/>
-          <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar">
-          Modificar
-          </td>
+
           </form>
 
-          <td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['idMaterias']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 
       <?php "</tr>"  ;
       }?>
 
-      <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" name="confirm-delete" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
