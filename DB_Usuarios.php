@@ -57,7 +57,7 @@ require 'conexion.php';
 
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-        <button class="btn btn-primary" type="submit" name="submit_mult" valie="Borrar" title="Borrar" >Borrar
+        <button class="btn btn-primary" type="submit"  value="Borrar" title="Borrar" >Borrar
         <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
         </form>
 
