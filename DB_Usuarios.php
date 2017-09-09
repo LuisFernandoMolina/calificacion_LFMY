@@ -64,7 +64,6 @@ require 'conexion.php';
 
           <td>
 
-
           <form action="ModificarUsuario2.php" method="POST">
           <input type="hidden" name="" value="<?php echo $result['idUsuarios'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar" data-toggle="modal" data-target="#confirm-delete">
@@ -73,6 +72,7 @@ require 'conexion.php';
 
 
           </form>
+
 
 
       <?php "</tr>"  ;
