@@ -76,13 +76,13 @@ function menu(){
     elseif($_SESSION['tipo_usuario']==1){
             echo "<li><a>Director</a></li>";
       echo "<li><a href=''>Departamentos</a></li>";
-      echo "<li><a href='DB_Materias.php'>Materias</a></li>";
-      echo "<li><a href='DB_Usuarios.php'>Usuarios</a>";
+      echo "<li><a href='\constitucion\calificacion_LFMY\DB_Materias.php'>Materias</a></li>";
+      echo "<li><a href='\constitucion\calificacion_LFMY\DB_Usuarios.php'>Usuarios</a>";
       echo"<li class='dropdown'>";
       echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Reportes <span class='caret'></span></a>";
       echo"<ul class='dropdown-menu'>";
-          echo"<li><a href='GenerarPDF.php'>Materias</a></li>";
-          echo"<li><a href='Reporte_Profesores.php'>Profesores</a></li>";
+          echo"<li><a href='\constitucion\calificacion_LFMY\GenerarPDF.php'>Materias</a></li>";
+          echo"<li><a href='\constitucion\calificacion_LFMY\Reporte_Profesores.php'>Profesores</a></li>";
         echo"</ul>";
   echo"</li>";
 
@@ -91,13 +91,13 @@ function menu(){
 
       elseif($_SESSION['tipo_usuario']==2){
               echo "<li><a>Docente</a></li>";
-        echo "<li><a href='DB_Materias.php'>Calificaciones</a></li>";
+        echo "<li><a href='\constitucion\calificacion_LFMY\DB_Materias.php'>Calificaciones</a></li>";
         echo"<li class='dropdown'>";
         echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Reportes <span class='caret'></span></a>";
         echo"<ul class='dropdown-menu'>";
-            echo"<li><a href='Reporte_grupos.php'>Grupos</a></li>";
-            echo"<li><a href='GenerarPDF.php'>Materias</a></li>";
-            echo"<li><a href='Reporte_Alumnos.php'>Alumnos</a></li>";
+            echo"<li><a href=\constitucion\calificacion_LFMY\'Reporte_grupos.php'>Grupos</a></li>";
+            echo"<li><a href='\constitucion\calificacion_LFMY\GenerarPDF.php'>Materias</a></li>";
+            echo"<li><a href='\constitucion\calificacion_LFMY\Reporte_Alumnos.php'>Alumnos</a></li>";
           echo"</ul>";
           echo"</li>";
     }
@@ -117,7 +117,7 @@ function menu(){
           elseif($_SESSION['tipo_usuario']==4){
                   echo "<li><a>Coordinador</a></li>";
             echo "<li><a href='DB_Materias.php'>Materias</a></li>";
-            echo "<li><a href='#'>Grupos</a>";
+            echo "<li><a href='\constitucion\calificacion_LFMY\DB_Grupos.php'>Grupos</a>";
             echo"<li class='dropdown'>";
             echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Reportes <span class='caret'></span></a>";
             echo"<ul class='dropdown-menu'>";
@@ -132,14 +132,10 @@ function menu(){
                     echo "<li><a>Administrador</a></li>";
               echo "<li><a href='DB_Materias.php'>Materias</a></li>";
               echo "<li><a href='DB_Usuarios.php'>Usuarios</a>";
-              echo "<li><a href='#'>Grupos</a>";
+              echo "<li><a href='\constitucion\calificacion_LFMY\DB_Grupos.php'>Grupos</a>";
           echo"</li>";
 
               }
-
-
-
-
 }
 function salir()
 {
