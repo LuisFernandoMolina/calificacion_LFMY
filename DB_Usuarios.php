@@ -20,7 +20,7 @@ require 'conexion.php';
     </div>
 <div class="row">
   <a href="Nuevo_usuario.php" class="btn btn-primary">Nuevo Usuario</a>
-  <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
+  <a href="home.php" class="btn btn-primary">Regresar</a>
   <br>
   </br>
 
@@ -54,19 +54,40 @@ require 'conexion.php';
 
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-        <button class="btn btn-primary" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
+        <button class="btn btn-primary" data-toggle="modal" data-target="#confirm-delete" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
       </td>
 
           <td>
-         
+
           <form action="ModificarUsuario2.php" method="POST">
-          <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsiarios'];?>"/>
+          <input type="hidden" name="" value="<?php echo $result['idUsiarios'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar">
           Modificar
           </td>
+          <td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['idMaterias']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 
       <?php "</tr>"  ;
       }?>
+
+      <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+  				<div class="modal-content">
+  					<div class="modal-header">
+  						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  						<h4 class="modal-title" id="myModalLabel">Eliminar</h4>
+  					</div>
+  					<div class="modal-body">
+  						<?php echo ($row['idMaterias']);?>
+               ¿Desea eliminar este registro de la base de Datos?
+  					</div>
+  					<div class="modal-footer">
+  						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+  						<a class="btn btn-danger btn-ok">Delete</a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
     </thead>
   </table>
 </body>
