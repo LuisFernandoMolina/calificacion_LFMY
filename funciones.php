@@ -1,5 +1,6 @@
 
 <?php
+//Funcion que muestra la descripcion de un tipo de usuario en especial
 function showtipo($entra){
   require 'conexion.php';
   $showtipo="SELECT * FROM tipos_usuarios WHERE idTipos_usuarios='$entra'";
@@ -13,6 +14,7 @@ function showtipo($entra){
   unset($showdescri);
   mysqli_close($conexion);
 }
+//Funcion que muestra el valor por default de un tipo de usuario
 function tipou($entrada){
   require 'conexion.php';
   $tipo="SELECT * FROM tipos_usuarios WHERE idTipos_usuarios='$entrada'";
@@ -27,7 +29,7 @@ function tipou($entrada){
   unset($descri);
   mysqli_close($conexion);
 }
-
+//Funcion que muestra los tipos de grupos dependiendo el id_Grupo
 function grupos(){
   require 'conexion.php';
   $sql="SELECT * FROM grupos";
@@ -42,7 +44,7 @@ function grupos(){
   unset($sql);
   mysqli_close($conexion);
 };
-
+//Funcion que muestra el id de la calificacion existentes
 function calificacion(){
   include 'conexion.php';
   $rql="SELECT * FROM calificacion";
@@ -57,7 +59,7 @@ function calificacion(){
   mysqli_close($conexion);
 }
 
-
+//Funcion que reliza los menus interactivos
 
 function menu(){
   if(!$_SESSION['usuario']){
