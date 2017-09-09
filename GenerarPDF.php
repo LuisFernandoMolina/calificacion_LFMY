@@ -18,6 +18,7 @@ $pdf->Cell(30,6,'Grupo',1,1,'C',1);
 
 while($row =$resultado->fetch_assoc() )
 {
+  $pdf->SetFont('Arial','',11);
   $pdf->Cell(20,6,$row['idMaterias'],1,0,'C',1);
   $pdf->Cell(50,6,$row['Nombre_materia'],1,0,'C',1);
   $pdf->Cell(30,6,$row['Horario'],1,0,'C',1);
