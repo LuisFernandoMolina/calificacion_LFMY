@@ -14,16 +14,15 @@ $pdf->Cell(20,6,'ID',1,0,'C',1);
 $pdf->Cell(50,6,'Materia',1,0,'C',1);
 $pdf->Cell(30,6,'Horario',1,0,'C',1);
 $pdf->Cell(30,6,'Salon',1,0,'C',1);
-$pdf->Cell(30,6,'Grupo',1,0,'C',1);
-$pdf->Cell(30,6,'calificacion',1,1,'C',1);
+$pdf->Cell(30,6,'Grupo',1,1,'C',1);
+
 while($row =$resultado->fetch_assoc() )
 {
   $pdf->Cell(20,6,$row['idMaterias'],1,0,'C',1);
   $pdf->Cell(50,6,$row['Nombre_materia'],1,0,'C',1);
   $pdf->Cell(30,6,$row['Horario'],1,0,'C',1);
   $pdf->Cell(30,6,$row['Salon'],1,0,'C',1);
-  $pdf->Cell(30,6,$row['Grupos_idGrupos'],1,0,'C',1);
-  $pdf->Cell(30,6,$row['Calificacion_idCalificacion'],1,1,'C',1);
+  $pdf->Cell(30,6,$row['Grupos_idGrupos'],1,1,'C',1);
 
 }
 
