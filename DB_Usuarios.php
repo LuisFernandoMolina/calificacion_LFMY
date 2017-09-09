@@ -55,15 +55,18 @@ require 'conexion.php';
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
         <button class="btn btn-primary" data-toggle="modal" data-target="#confirm-delete" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
+        </form>
       </td>
 
           <td>
 
-          <form action="ModificarUsuario2.php" method="POST">
+          <form action="ModificarUsuarios2.php" method="POST">
           <input type="hidden" name="" value="<?php echo $result['idUsiarios'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar">
           Modificar
           </td>
+          </form>
+
           <td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['idMaterias']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 
       <?php "</tr>"  ;

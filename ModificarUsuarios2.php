@@ -26,3 +26,7 @@
 	<br /> <input type="submit" class="button" value="Modificar Usuario">
  <br /><h3> <a ALIGN=center href="DB_Usuarios.php.php">REGRESAR</a></h3>
 <br /> <center>
+</center>
+</form>
+</body>
+</html>
