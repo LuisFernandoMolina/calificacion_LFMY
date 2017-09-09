@@ -47,6 +47,8 @@ function menu(){
     elseif($_SESSION['tipo_usuario']==1){
             echo "<li><a>Director</a></li>";
       echo "<li><a href=''>Departamentos</a></li>";
+      echo "<li><a href='DB_Materias.php'>Materias</a></li>";
+      echo "<li><a href='DB_Usuarios.php'>Usuarios</a>";
       echo"<li class='dropdown'>";
       echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Reportes <span class='caret'></span></a>";
       echo"<ul class='dropdown-menu'>";
@@ -86,7 +88,7 @@ function menu(){
           elseif($_SESSION['tipo_usuario']==4){
                   echo "<li><a>Coordinador</a></li>";
             echo "<li><a href='DB_Materias.php'>Materias</a></li>";
-            echo "<li><a href='DB_Usuarios.php'>Grupos</a>";
+            echo "<li><a href='#'>Grupos</a>";
             echo"<li class='dropdown'>";
             echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Reportes <span class='caret'></span></a>";
             echo"<ul class='dropdown-menu'>";
@@ -101,7 +103,7 @@ function menu(){
                     echo "<li><a>Administrador</a></li>";
               echo "<li><a href='DB_Materias.php'>Materias</a></li>";
               echo "<li><a href='DB_Usuarios.php'>Usuarios</a>";
-              echo "<li><a href='DB_Usuarios.php'>Grupos</a>";
+              echo "<li><a href='#'>Grupos</a>";
           echo"</li>";
 
               }
