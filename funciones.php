@@ -7,7 +7,7 @@ function grupos(){
   $idgrupo=mysqli_query($conexion,$sql);
   while ($resultado=mysqli_fetch_array($idgrupo)) {
     $grupo=$resultado['Clave_grupo'];
-    $id=$resultado['idMaterias'];
+    $id=$resultado['idGrupos'];
     echo "<option value='$id'>$grupo</option>";
   }
   unset($id);
