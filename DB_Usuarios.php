@@ -54,18 +54,18 @@ require 'conexion.php';
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "
       ?>
       <td>
-       
+
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
         <button class="btn btn-primary" type="submit" name="submit_mult" value="Borrar" title="Borrar" >Borrar
-        
+
         </form>
 
       </td>
 
           <td>
 
-          <form action="ModificarUsuarios2.php" method="POST">
+          <form action="ModificarUsuario.php" method="POST">
           <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" value="Modificar" title="Modificar"> Modificar
           </td>

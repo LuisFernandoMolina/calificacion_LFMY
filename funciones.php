@@ -1,5 +1,19 @@
 
 <?php
+function tipou($entrada){
+  require 'conexion.php';
+  $tipo="SELECT * FROM tipos_usuarios WHERE idTipos_usuarios='$entrada'";
+  $descri=mysqli_query($conexion,$tipo);
+  while ($resultad=mysqli_fetch_array($descri)) {
+    $idt=$resultad['idTipos_usuarios'];
+    $ides=$resultad['Tipo'];
+    echo "<option value='$idt' selected>$ides</option >";
+  }
+  unset($idt);
+  unset($tipo);
+  unset($descri);
+  mysqli_close($conexion);
+}
 
 function grupos(){
   require 'conexion.php';
