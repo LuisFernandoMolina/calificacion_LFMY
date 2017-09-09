@@ -27,7 +27,7 @@ $resultado = $conexion->query($sql);
 </head>
 
 <body>
-	
+
   <div class="container">
   <div class="row">
   <h2 style="text-align:center">Materias Ingenieria en Sistemas</h2>
@@ -35,10 +35,6 @@ $resultado = $conexion->query($sql);
 <div class="row">
   <a href="Nueva_Materia.php" class="btn btn-primary">Agregar Materias</a>
   <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
-  <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-  					<b>Nombre: </b><input type="text" id="campo" name="campo" />
-  					<input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-info" />
-  				</form>
 <br>
 <div class="row table-responsive">
   <table class="table table-striped">
@@ -71,17 +67,14 @@ $resultado = $conexion->query($sql);
 		<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						<h4 class="modal-title" id="myModalLabel">Eliminar</h4>
 					</div>
-
 					<div class="modal-body">
 						<?php echo ($row['idMaterias']);?>
              ¿Desea eliminar este registro de la base de Datos?
 					</div>
-
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 						<a class="btn btn-danger btn-ok">Delete</a>
