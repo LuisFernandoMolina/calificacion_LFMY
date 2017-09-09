@@ -19,6 +19,8 @@ $resultado=mysqli_query($conexion, $query);
 		<div class="container">
 			<div class="row">
 				<div class="row" style="text-align:center">
+
+
 					<?php if($resultado) { ?>
 						<h3>Usuario Eliminado Exitosamente</h3>
 						<?php } else { ?>

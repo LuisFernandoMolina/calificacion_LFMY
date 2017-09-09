@@ -54,7 +54,7 @@ require 'conexion.php';
           <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "
       ?>
       <td>
-
+       
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
         <button class="btn btn-primary" type="submit" name="submit_mult" value="Borrar" title="Borrar" >Borrar
