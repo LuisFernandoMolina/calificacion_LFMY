@@ -59,7 +59,7 @@ require 'conexion.php';
       ?>
       <td>
        
-        <form action="eliminarU.php" method="POST">
+        <form action="eliminarM.php" method="POST">
         <input type="hidden" name="idMaterias" value="<?php echo $result['idMaterias'];?>" />
         <button class="btn btn-primary" type="submit" name="submit_mult" value="Borrar" title="Borrar" >Borrar
         
