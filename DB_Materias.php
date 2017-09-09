@@ -34,7 +34,7 @@ $resultado = $conexion->query($sql);
     </div>
 <div class="row">
   <a href="Nueva_Materia.php" class="btn btn-primary">Agregar Materias</a>
-  <a href="homeadmin.php" class="btn btn-primary">Regresar</a>
+  <a href="home.php" class="btn btn-primary">Regresar</a>
 <br>
 <div class="row table-responsive">
   <table class="table table-striped">

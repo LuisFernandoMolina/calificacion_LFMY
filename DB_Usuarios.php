@@ -1,3 +1,6 @@
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <?php
 require 'conexion.php';
   $query="SELECT * FROM usuarios";
@@ -54,39 +57,38 @@ require 'conexion.php';
 
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-        <button class="btn btn-primary" data-toggle="modal" data-target="#confirm-delete" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
+      </form>
       </td>
 
           <td>
 
           <form action="ModificarUsuario2.php" method="POST">
-          <input type="hidden" name="" value="<?php echo $result['idUsiarios'];?>"/>
-          <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar">
+          <input type="hidden" name="" value="<?php echo $result['idUsuarios'];?>"/>
+          <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar" data-toggle="modal" data-target="#confirm-delete">
           Modificar
           </td>
-          <td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['idMaterias']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
-
       <?php "</tr>"  ;
       }?>
 
       <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  			<div class="modal-dialog">
-  				<div class="modal-content">
-  					<div class="modal-header">
-  						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-  						<h4 class="modal-title" id="myModalLabel">Eliminar</h4>
-  					</div>
-  					<div class="modal-body">
-  						<?php echo ($row['idMaterias']);?>
-               ¿Desea eliminar este registro de la base de Datos?
-  					</div>
-  					<div class="modal-footer">
-  						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-  						<a class="btn btn-danger btn-ok">Delete</a>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Eliminar</h4>
+            </div>
+            <div class="modal-body">
+
+               ¿Desea eliminar este Usuario de la base de Datos?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <!--<a class="btn btn-danger btn-ok">Delete</a>-->
+              <button class="btn btn-danger btn-ok" type="submit" name="submit_mult" value="Borrar" title="Borrar">Delete
+            </div>
+          </div>
+        </div>
+      </div>
 
     </thead>
   </table>
