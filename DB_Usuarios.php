@@ -57,7 +57,7 @@ require 'conexion.php';
 
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-        <button class="btn btn-primary" type="submit" name="submit_mult" valie="Borrar" title="Borrar" >Borrar
+        <button class="btn btn-primary" type="submit" name="submit_mult" value="Borrar" title="Borrar" >Borrar
         <td><a href="#confirm-delete" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
         </form>
 
@@ -65,10 +65,9 @@ require 'conexion.php';
 
           <td>
 
-          <form action="ModificarUsuario2.php" method="POST">
-          <input type="hidden" name="" value="<?php echo $result['idUsuarios'];?>"/>
-          <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar" data-toggle="modal" data-target="#confirm-delete">
-          Modificar
+          <form action="ModificarUsuarios2.php" method="POST">
+          <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>"/>
+          <button class="btn btn-primary" type="submit" name="submit_mult" value="Modificar" title="Modificar"> Modificar
           </td>
 
 
