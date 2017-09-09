@@ -1,5 +1,18 @@
 
 <?php
+function showtipo($entra){
+  require 'conexion.php';
+  $showtipo="SELECT * FROM tipos_usuarios WHERE idTipos_usuarios='$entra'";
+  $showdescri=mysqli_query($conexion,$showtipo);
+  while ($showresultad=mysqli_fetch_array($showdescri)) {
+    $showides=$showresultad['Tipo'];
+    echo "<td>$showides</td>";
+  }
+  unset($showidt);
+  unset($showtipo);
+  unset($showdescri);
+  mysqli_close($conexion);
+}
 function tipou($entrada){
   require 'conexion.php';
   $tipo="SELECT * FROM tipos_usuarios WHERE idTipos_usuarios='$entrada'";

@@ -42,7 +42,7 @@ require 'conexion.php';
       </tr>
 
       <?php
-
+      include 'funciones.php';
       while($result=mysqli_fetch_array($query))
       {
         $idUsuarios = $result ['idUsuarios'];
@@ -50,8 +50,8 @@ require 'conexion.php';
         "<tr >
           <td name='idUsuario' id='idUsuario'>".$result['idUsuarios']."</td>
           <td>".$result['Nombre']."</td>
-          <td>".$result['clave']."</td>
-          <td>".$result['Tipos_usuarios_idTipos_usuarios']."</td> "
+          <td>".$result['clave']."</td>";
+          showtipo($result['Tipos_usuarios_idTipos_usuarios']);
       ?>
       <td>
 
