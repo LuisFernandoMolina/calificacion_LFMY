@@ -12,27 +12,48 @@
 			<div class="row">
 				<h3 style="text-align:center">Nueva Materia</h3>
 			</div>
-			<form class="form-horizontal" method="POST" action="guardar.php" autocomplete="off">
+			<form class="form-horizontal" method="POST" action="guardarM.php" autocomplete="off">
 				<div class="form-group">
-					<label for="Nombre" class="col-sm-2 control-label">Nombre</label>
+					<label for="Nombre_materia" class="col-sm-2 control-label">Nombre</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Nombre" required>
+						<input type="text" class="form-control" id="Nombre_materia" name="Nombre_materia" placeholder="Nombre de materia" required>
 					</div>
 				</div>
-
 				<div class="form-group">
-					<label for="Nombre" class="col-sm-2 control-label">Horario</label>
+					<label for="Horario" class="col-sm-2 control-label">Horario</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="Horario" name="Horario" placeholder="Horario" required>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="Nombre" class="col-sm-2 control-label">Salon</label>
+					<label for="Salon" class="col-sm-2 control-label">Salon</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="Salon" name="Salon" placeholder="Salon" required>
 					</div>
 				</div>
+				<div class="form-group">
+					<label for="grupos" class="col-sm-2 control-label">Grupo</label>
+						<div class="col-sm-10">
+							<select name="idGrupo" id="idGrupo"  placeholder="Grupo" class="form-control"  required>
+								<option value=""></option>
+								<?php require 'funciones.php';
+									grupos();
+								?>
+							</select>
+						</div>
 				</div>
+			<div class="form-group">
+							<label for="" class="col-sm-2 control-label">IdCalificacion</label>
+							<div class="col-sm-10">
+								<select class="form-control" name="calificacion" id="calificaion">
+									<option value=""></option>
+									<?php
+									 	calificacion();
+									?>
+								</select>
+							</div>
+				</div>
+			</div>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
@@ -40,6 +61,10 @@
 						<button type="submit" class="btn btn-primary">Guardar</button>
 					</div>
 				</div>
+
+
+
+
 			</form>
 		</div>
 	</body>

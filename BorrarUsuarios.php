@@ -1,5 +1,7 @@
 <?php>
 
+ $idusuario=($GET['variable']);
+ echo $idusuario;
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Confirma IdUsuarios</title>

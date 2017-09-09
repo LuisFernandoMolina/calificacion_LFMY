@@ -1,24 +1,22 @@
 <?php
 require 'conexion.php';
 
-$Nombre = $_POST["Nombre"];
-$clave = $_POST["clave"];
-$Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
+$Nombre_materia= $_POST["Nombre_materia"];
+$Horario = $_POST["Horario"];
+$Salon = $_POST["Salon"];
+
+$Grupos_idGrupos=1;
+$Calificacion_idCalificacion=1;
 
 /*foreach ($_POST['Tipos_usuarios_idTipos_usuarios'] as $Tipos_usuarios_idTipos_usuarios);*/
 $error_message = "";
 //Validar usuario no este vacio
-if($Nombre==""){
-  $error_message="Ingrese un nombre de usuario";
+if($Nombre_materia==""){
+  $error_message="Ingrese un nombre de Materia";
 }
-  // Realiza la validación de contraseñas
-if (strlen($clave) < 4) {
-  $error_message = " introduzca maximo 4 caracteres";
-}
-
 echo $error_message;
 
-$verifica="SELECT * FROM usuarios WHERE Nombre='$Nombre'";
+$verifica="SELECT * FROM materias WHERE Nombre_materia='$Nombre_materia'";
 $verifica=mysqli_query($conexion,$verifica);
 $fil=mysqli_num_rows($verifica);
   if($fil>0){
@@ -26,10 +24,12 @@ $fil=mysqli_num_rows($verifica);
   }
   else
   {
-    $insertar ="INSERT INTO usuarios (Nombre, clave, Tipos_usuarios_idTipos_usuarios) VALUES('$Nombre', '$clave', '$Tipos_usuarios_idTipos_usuarios')"; //falta el parametro de tipo de usuario
+    $insertar ="INSERT INTO materias (Nombre_materia, Horario, Salon,Grupos_idGrupos,Calificacion_idCalificacion) VALUES('$Nombre_materia', '$Horario', '$Salon','$Grupos_idGrupos','$Calificacion_idCalificacion')"; //falta el parametro de tipo de usuario
     $resultado = mysqli_query($conexion, $insertar);
     if(!$resultado){
-      echo 'Error al registrarse';
+      echo 'Error al registar Materia';
+      echo $Grupos_idGrupos;
+      echo $Grupos_idGrupos;
     }
     else{
         header("index.php");
@@ -56,7 +56,7 @@ $fil=mysqli_num_rows($verifica);
 						<?php } else { ?>
 						<h3>ERROR AL GUARDAR</h3>
 					<?php } ?>
-					<a href="DB_Usuarios.php" class="btn btn-primary">Regresar</a>
+					<a href="DB_Materias.php" class="btn btn-primary">Regresar</a>
 				</div>
 			</div>
 		</div>

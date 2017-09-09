@@ -9,11 +9,14 @@
 	$resultado=mysqli_query($conexion,$consulta);
 
 	$filas=mysqli_num_rows($resultado);
+	$idtipo=mysqli_fetch_array($resultado);
+	//echo $idtipo['Tipos_usuarios_idTipos_usuarios'];
 		if($filas>0){
 			//Variabled de section
 			session_start();
 			$_SESSION['usuario']=$username;
-			$_SESSION['tipo_usuario']=100;///Aqui lleva un array
+			$_SESSION['tipo_usuario']=$idtipo['Tipos_usuarios_idTipos_usuarios'];///Aqui lleva un array
+			//$_SESSION['tipo_usuario']=100;
 			header("location:home.php?$username");
 		}
 		else{
