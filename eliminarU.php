@@ -2,11 +2,31 @@
 require 'conexion.php';
 $idUsuarios=$_POST['idUsuarios'];
 $query = "DELETE  FROM usuarios WHERE idUsuarios='$idUsuarios' LIMIT 1";
-    if(mysqli_query($conexion, $query)) {
-	     echo '<p>Usuario Borrado Exitosamente.</p>';
-	     //sleep(10);
-	     header("location:DB_Usuarios.php");
-     }else{
-	      echo '<p>El usuario no se pudo borrar.</p>';
-    }
+$resultado=mysqli_query($conexion, $query);
+   
  ?>
+ <html lang="es">
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="row" style="text-align:center">
+					<?php if($resultado) { ?>
+						<h3>Usuario Eliminado Exitosamente</h3>
+						<?php } else { ?>
+						<h3>Error al Eliminar Usuario</h3>
+					<?php } ?>
+					<a href="DB_Usuarios.php" class="btn btn-primary">Regresar</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
