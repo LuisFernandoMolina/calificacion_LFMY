@@ -9,11 +9,15 @@ class PDF extends FPDF
   function Header()
   {
     # Datos de cabecera
-    $this->Image ('images/logo.png',5,0,20);
+    $this->Image ('images/logo.png',10,5,30);
+    $this->Image ('images/isc.jpg',140,5,80);
     $this->SetFont('Arial','B',15);
-    $this->Cell(30);
-    $this->Cell(120,10,"Constitucion de 1918 ",0,0,'C');
-    $this->Ln(20);//salto de linea
+
+    $this->Cell(170,5,"Tecnologico Nacional de Mexico ",0,0,'C');
+    $this->Ln();//salto de linea
+    $this->SetFont('Arial','',13);
+    $this->Cell(170,5,'Instituto Tecnologico de Queretaro',0,0,'C');
+    $this->Ln(40);
   }
   function Footer()
   {
