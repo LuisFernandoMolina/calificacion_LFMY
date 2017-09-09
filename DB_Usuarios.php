@@ -57,23 +57,23 @@ require 'conexion.php';
 
         <form action="eliminarU.php" method="POST">
         <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsuarios'];?>" />
-<<<<<<< HEAD
+
       </form>
-=======
+
         <button class="btn btn-primary" data-toggle="modal" data-target="#confirm-delete" type="submit" name="submit_mult" value="Borrar" title="Borrar">Borrar
         </form>
->>>>>>> 37f9bfe04ddffa782b5be929c1e19e606e208794
+
       </td>
 
           <td>
 
-<<<<<<< HEAD
+
           <form action="ModificarUsuario2.php" method="POST">
           <input type="hidden" name="" value="<?php echo $result['idUsuarios'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar" data-toggle="modal" data-target="#confirm-delete">
           Modificar
           </td>
-=======
+
           <form action="ModificarUsuarios2.php" method="POST">
           <input type="hidden" name="" value="<?php echo $result['idUsiarios'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar">
@@ -83,7 +83,6 @@ require 'conexion.php';
 
           <td><a href="#" data-href="Borrar_DBMaterias.php?id=<?php echo $row['idMaterias']; ?>" data-toggle="modal" data-target="#confirm-delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 
->>>>>>> 37f9bfe04ddffa782b5be929c1e19e606e208794
       <?php "</tr>"  ;
       }?>
 
