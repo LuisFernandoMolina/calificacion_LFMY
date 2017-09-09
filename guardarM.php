@@ -4,9 +4,8 @@ require 'conexion.php';
 $Nombre_materia= $_POST["Nombre_materia"];
 $Horario = $_POST["Horario"];
 $Salon = $_POST["Salon"];
-
-$Grupos_idGrupos=1;
-$Calificacion_idCalificacion=1;
+$Grupos_idGrupos=$_POST["idGrupo"];
+$Calificacion_idCalificacion=$_POST["calificacion"];
 
 /*foreach ($_POST['Tipos_usuarios_idTipos_usuarios'] as $Tipos_usuarios_idTipos_usuarios);*/
 $error_message = "";

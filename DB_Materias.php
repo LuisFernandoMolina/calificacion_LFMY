@@ -17,15 +17,17 @@ $sql="SELECT materias.idMaterias,materias.Nombre_materia,materias.Horario,materi
 $resultado = $conexion->query($sql);
 ?>
 
-<html lang="es">
+<html lang="es" >
 
 <head>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 </head>
 
 <body>
+	
   <div class="container">
   <div class="row">
   <h2 style="text-align:center">Materias Ingenieria en Sistemas</h2>

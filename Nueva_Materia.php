@@ -34,7 +34,7 @@
 				<div class="form-group">
 					<label for="grupos" class="col-sm-2 control-label">Grupo</label>
 						<div class="col-sm-10">
-							<select name="idGrupo" id="idGrupo"  placeholder="Grupo" class="form-control"  required>
+							<select  name="idGrupo"  id="idGrupo" placeholder="Grupo" class="form-control"  required>
 								<option value=""></option>
 								<?php require 'funciones.php';
 									grupos();
