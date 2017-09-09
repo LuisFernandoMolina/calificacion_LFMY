@@ -65,12 +65,6 @@ require 'conexion.php';
           Modificar
           </td>
 
-
-
-
-
-          <td><a href="ModificarUsuarios.php?$idUsuarios" class="btn btn-primary">Modificar</a></td>
-          </form>
       <?php "</tr>"  ;
       }?>
     </thead>
