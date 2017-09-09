@@ -58,6 +58,11 @@ require 'conexion.php';
       </td>
 
           <td>
+         
+          <form action="ModificarUsuario2.php" method="POST">
+          <input type="hidden" name="idUsuarios" value="<?php echo $result['idUsiarios'];?>"/>
+          <button class="btn btn-primary" type="submit" name="submit_mult" valie="Modificar" title="Modificar">
+          Modificar
           </td>
 
 
