@@ -26,7 +26,7 @@ $resultado=mysqli_query($conexion, $insertar);
 					<?php if($resultado) { ?>
 						<h3>Grupo Modificado Exitosamente</h3>
 						<?php } else { ?>
-						<h3>Error al Modificar Grupo Usuario</h3>
+						<h3>Error al Modificar Grupo </h3>
 					<?php } ?>
 					<a href="DB_Grupos.php" class="btn btn-primary">Regresar</a>
 				</div>

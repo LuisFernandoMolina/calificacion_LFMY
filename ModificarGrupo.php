@@ -26,7 +26,7 @@
 	</div>
 	<div class="form-group">
 
-		<label for="idGrupo" class="col-sm-2 control-label">Id Grupos</label>
+		<label for="idGrupos" class="col-sm-2 control-label">Id Grupos</label>
 		<div class="col-sm-10">
 		 <input class="form-control" style="WIDTH:100px; HEIGHT:30px" size=32 input name="idGrupos" class="form-input" value=<?php echo "\"".$dato['idGrupos']."\""; ?> required>
 		</div>
