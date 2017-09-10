@@ -42,15 +42,32 @@
 		<div class="col-sm-10">
 			<input class="form-control" style="WIDTH:350px; HEIGHT: 30px" size=32 input name="Horario" class="form-input" value=<?php echo "\"".$dato['Horario']."\""; ?> required>
 		</div>
+	</div>
     <div class="form-group">
 		<label for="clave" class="col-sm-2 control-label">Salon</label>
 		<div class="col-sm-10">
 			<input class="form-control" style="WIDTH:350px; HEIGHT: 30px" size=32 input name="Salon" class="form-input" value=<?php echo "\"".$dato['Salon']."\""; ?> required>
 		</div>
 	</div>
-	
-
-
+	<div class="form-group">
+		<label for="Grupos_idGrupos" class="col-sm-2 control-label">Grupo</label>
+		<div class="col-sm-10">
+			<select class="form-control" class="form-input" input name="Grupos_idGrupos" id="Grupos_idGrupos">
+					<?php include 'funciones.php'; showidgrupo($dato['Grupos_idGrupos']);
+						grupos();
+					?>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="Calificacion_idCalificacion" class="col-sm-2 control-label">Calificación</label>
+		<div class="col-sm-10">
+			<select class="form-control" class="form-input" input name="Calificacion_idCalificacion" id="Calificacion_idCalificacion">
+					<?php showidcalifi($dato['Calificacion_idCalificacion']);
+					?>
+			</select>
+		</div>
+	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			<button type="submit" class="btn btn-success" value="Modificar Materia">Modificar</button>

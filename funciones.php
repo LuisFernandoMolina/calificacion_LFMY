@@ -1,5 +1,48 @@
 
 <?php
+//Funcion que muestra las opciones de los id de las calificaciones
+function showidcalifi($e){
+  require 'conexion.php';
+  $sh="SELECT * FROM calificacion WHERE idCalificacion='$e'";
+  $showd=mysqli_query($conexion,$sh);
+  while ($showre=mysqli_fetch_array($showd)) {
+    $idc=$showre['idCalificacion'];
+    $valorc=$showre['Valor'];
+    echo "<option value='$idc' selected>$idc</option >";
+  }
+  $s="SELECT * FROM calificacion";
+  $sho=mysqli_query($conexion,$s);
+  while ($si=mysqli_fetch_array($sho)) {
+    $ids=$si['idCalificacion'];
+    $valors=$si['Valor'];
+    echo "<option value='$ids'>$ids</option >";
+  }
+  unset($sh);
+  unset($showd);
+  unset($idc);
+  unset($valorc);
+  mysqli_close($conexion);
+}
+
+//Funcion que muestra las opciones de la clave del grupo
+function showidgrupo($entra){
+  require 'conexion.php';
+  $showidgr="SELECT * FROM grupos WHERE idGrupos='$entra'";
+  $showdescri=mysqli_query($conexion,$showidgr);
+  while ($showresultad=mysqli_fetch_array($showdescri)) {
+    $showides=$showresultad['Clave_grupo'];
+    $idt=$resultad['idGrupos'];
+    echo "<option value='$entra'selected>$showides</option >";
+  }
+  unset($showidgr);
+  unset($showdescri);
+  unset($showresultad);
+  unset($idt);
+  unset($entra);
+  mysqli_close($conexion);
+}
+
+
 //Funcion que muestra la descripcion de un tipo de usuario en especial
 function showtipo($entra){
   require 'conexion.php';
@@ -12,6 +55,7 @@ function showtipo($entra){
   unset($showidt);
   unset($showtipo);
   unset($showdescri);
+  unset($entra);
   mysqli_close($conexion);
 }
 //Funcion que muestra el valor por default de un tipo de usuario

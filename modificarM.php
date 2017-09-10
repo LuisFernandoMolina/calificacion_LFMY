@@ -10,7 +10,8 @@ $Calificacion_idCalificacion = $_POST["Calificacion_idCalificacion"];
 
 
 $insertar ="UPDATE materias SET idMaterias='$idMaterias', Nombre_materia='$Nombre_materia', Horario='$Horario', Salon='$Salon', Grupos_idGrupos='$Grupos_idGrupos', Calificacion_idCalificacion='$Calificacion_idCalificacion' WHERE idMaterias='$idMaterias'";
-
+echo $Grupos_idGrupos;
+echo $Calificacion_idCalificacion;
 $resultado=mysqli_query($conexion, $insertar);
 ?>
  <html lang="es">
@@ -30,7 +31,7 @@ $resultado=mysqli_query($conexion, $insertar);
 					<?php if($resultado) { ?>
 						<h3>Materia Modificada Exitosamente</h3>
 						<?php } else { ?>
-						<h3>Error al Modificar Materias Usuario</h3>
+						<h3>Error al Modificar Materias </h3>
 					<?php } ?>
 					<a href="DB_Materias.php" class="btn btn-primary">Regresar</a>
 				</div>
