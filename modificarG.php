@@ -4,9 +4,9 @@ require 'conexion.php';
 $idGrupos = $_POST["idGrupos"];
 $Clave_grupo = $_POST["Clave_grupo"];
 
-
-$insertar ="UPDATE grupos SET idGrupos='$idGrupos', Clave_grupo='$Clave_grupo' WHERE idGrupos='$idGrupos";
-
+echo $idGrupos;
+echo $Clave_grupo;
+$insertar ="UPDATE grupos SET idGrupos='$idGrupos', Clave_grupo='$Clave_grupo' WHERE idGrupos='$idGrupos'";
 $resultado=mysqli_query($conexion, $insertar);
 ?>
  <html lang="es">
