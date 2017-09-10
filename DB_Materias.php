@@ -69,7 +69,7 @@ require 'conexion.php';
 
           <td>
 
-          <form action="ModificarUsuarios2.php" method="POST">
+          <form action="ModificarMateria.php" method="POST">
           <input type="hidden" name="idMaterias" value="<?php echo $result['idMaterias'];?>"/>
           <button class="btn btn-primary" type="submit" name="submit_mult" value="Modificar" title="Modificar"> Modificar
           </td>

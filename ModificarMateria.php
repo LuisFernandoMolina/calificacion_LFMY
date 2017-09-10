@@ -38,28 +38,23 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="clave" class="col-sm-2 control-label">Clave</label>
+		<label for="clave" class="col-sm-2 control-label">Horario</label>
 		<div class="col-sm-10">
-			<input class="form-control" style="WIDTH:350px; HEIGHT: 30px" size=32 input name="clave" class="form-input" value=<?php echo "\"".$dato['clave']."\""; ?> required>
+			<input class="form-control" style="WIDTH:350px; HEIGHT: 30px" size=32 input name="Horario" class="form-input" value=<?php echo "\"".$dato['Horario']."\""; ?> required>
+		</div>
+    <div class="form-group">
+		<label for="clave" class="col-sm-2 control-label">Salon</label>
+		<div class="col-sm-10">
+			<input class="form-control" style="WIDTH:350px; HEIGHT: 30px" size=32 input name="Salon" class="form-input" value=<?php echo "\"".$dato['Salon']."\""; ?> required>
 		</div>
 	</div>
-	<div class="form-group">
-		<label for="tipo_usuario" class="col-sm-2 control-label">Tipo de usuario</label>
-		<div class="col-sm-10">
-			<select class="form-control" class="form-input" input name="Tipos_usuarios_idTipos_usuarios" id="Tipos_usuarios_idTipos_usuarios">
-					<?php include 'funciones.php'; tipou($dato['Tipos_usuarios_idTipos_usuarios']) ?>
-					<option value="0" input name="Tipos_usuarios_idTipos_usuarios">Usuario</option>
-					<option value="1"name="Tipos_usuarios_idTipos_usuarios">Director</option>
-					<option value="2"name="Tipos_usuarios_idTipos_usuarios">Maestro</option>
-					<option value="3"name="Tipos_usuarios_idTipos_usuarios">Estudiante</option>
-					<option value="4"name="Tipos_usuarios_idTipos_usuarios">Coordiandor</option>
-			</select>
-		</div>
-	</div>
+	
+
+
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
-			<button type="submit" class="btn btn-success" value="Modificar Usuario">Modificar</button>
-			<a href="DB_Usuarios.php" class="btn btn-primary">Regresar</a>
+			<button type="submit" class="btn btn-success" value="Modificar Materia">Modificar</button>
+			<a href="DB_Materias.php" class="btn btn-primary">Regresar</a>
 		</div>
 
 	</div>
