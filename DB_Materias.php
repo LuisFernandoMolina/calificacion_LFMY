@@ -10,7 +10,8 @@ require 'conexion.php';
 <html lang="es">
 
 <head>
-
+  
+<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="bootstrap.min.js"></script>

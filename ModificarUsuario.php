@@ -13,6 +13,7 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <head>
+	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 	<title> Modificar Usuario </title>
 </head>
 <body>

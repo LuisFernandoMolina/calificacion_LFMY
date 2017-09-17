@@ -1,6 +1,7 @@
 <?php>
 
 	<head>
+	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Nuevo registro</title>
 		<meta name="viewport" content="width=divice-width,
