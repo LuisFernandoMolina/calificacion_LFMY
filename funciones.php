@@ -125,7 +125,7 @@ function menu(){
       echo"<li class='dropdown'>";
       echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Reportes <span class='caret'></span></a>";
       echo"<ul class='dropdown-menu'>";
-          echo"<li><a href='\constitucion\calificacion_LFMY\GenerarPDF.php'>Materias</a></li>";
+          echo"<li><a href='\constitucion\calificacion_LFMY\GenerarPDF.php' target='_blank'>Materias</a></li>";
           echo"<li><a href='\constitucion\calificacion_LFMY\Reporte_Profesores.php'>Profesores</a></li>";
         echo"</ul>";
   echo"</li>";

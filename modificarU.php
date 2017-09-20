@@ -3,7 +3,7 @@ require 'conexion.php';
 
 $idUsuarios = $_POST["idUsuarios"];
 $Nombre = $_POST["Nombre"];
-$clave = md5($_POST["clave"]);
+$clave = $_POST["clave"];
 $Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
 
 $insertar ="UPDATE usuarios SET idUsuarios='$idUsuarios', Nombre='$Nombre', clave='$clave', Tipos_usuarios_idTipos_usuarios='$Tipos_usuarios_idTipos_usuarios' WHERE idUsuarios='$idUsuarios'";
