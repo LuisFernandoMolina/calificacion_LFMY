@@ -1,24 +1,44 @@
+
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <?php
+include 'funciones.php';
+session_start();
 require 'conexion.php';
   $query="SELECT * FROM usuarios";
   $query=mysqli_query($conexion,$query);
-
 ?>
 <html lang="es">
 
 <head>
 
-<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8"> 
+<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
 
 </head>
 <body>
-  <div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="home.php">Home</a></li>
+          <li class=""><a href="#">Eventos</a></li>
+          <li class=""><a href="#">Calendario</a></li>
+          <?php
+
+          menu(); ?>
+       </ul>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav
+<div class="container">
     <div class="row">
 <h2 style="text-align:center">Administración de Usuarios</h2>
     </div>
@@ -43,7 +63,6 @@ require 'conexion.php';
       </tr>
 
       <?php
-      include 'funciones.php';
       while($result=mysqli_fetch_array($query))
       {
         $idUsuarios = $result ['idUsuarios'];

@@ -64,9 +64,9 @@ require "funciones.php"; ?>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="active"><a href="#">Eventos</a></li>
-        <li class="active"><a href="#">Calendario</a></li>
+        <li class=""><a href="#">Home</a></li>
+        <li class=""><a href="#">Eventos</a></li>
+        <li class=""><a href="#">Calendario</a></li>
         <?php menu(); ?>
      </ul>
       </ul>

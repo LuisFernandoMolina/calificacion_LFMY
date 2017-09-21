@@ -23,24 +23,12 @@ require 'conexion.php';
 </head>
 <body>
   <nav class="navbar navbar-inverse">
-   <div class="fondo_tec" id="Fondo" align="center">
-  				<img src="imagenes/encabezado.png">
-  			</div>
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-       <!--<a class="navbar-brand" href="#">Logo</a>-->
-
-      </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="#">Eventos</a></li>
-          <li class="active"><a href="#">Calendario</a></li>
+          <li class=""><a href="home.php">Home</a></li>
+          <li class=""><a href="#">Eventos</a></li>
+          <li class=""><a href="#">Calendario</a></li>
           <?php menu(); ?>
        </ul>
         </ul>
@@ -50,7 +38,6 @@ require 'conexion.php';
       </div>
     </div>
   </nav>
-
   <div class="container">
     <div class="row">
 <h2 style="text-align:center">Administración de Materias</h2>
