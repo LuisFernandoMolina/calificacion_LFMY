@@ -4,6 +4,7 @@ require "funciones.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
