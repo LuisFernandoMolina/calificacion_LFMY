@@ -69,10 +69,6 @@ require "funciones.php"; ?>
         <li class="active"><a href="#">Calendario</a></li>
         <?php menu(); ?>
      </ul>
-
-
-
-
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>

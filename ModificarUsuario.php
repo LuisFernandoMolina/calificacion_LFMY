@@ -29,7 +29,7 @@
 
 		<label for="idUsuarios" class="col-sm-2 control-label">Id Usuario</label>
 		<div class="col-sm-10">
-		 <input class="form-control" style="WIDTH:100px; HEIGHT:30px" size=32 input name="idUsuarios" class="form-input" value=<?php echo "\"".$dato['idUsuarios']."\""; ?> required>
+		 <input class="form-control" readonly="readonly" style="WIDTH:100px; HEIGHT:30px" size=32  input name="idUsuarios" class="form-input" value=<?php echo "\"".$dato['idUsuarios']."\""; ?> required>
 		</div>
 	</div>
 	<div class="form-group">

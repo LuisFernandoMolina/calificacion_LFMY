@@ -6,7 +6,7 @@ $Nombre = $_POST["Nombre"];
 $clave = $_POST["clave"];
 $Tipos_usuarios_idTipos_usuarios = $_POST["Tipos_usuarios_idTipos_usuarios"];
 
-$insertar ="UPDATE usuarios SET idUsuarios='$idUsuarios', Nombre='$Nombre', clave='$clave', Tipos_usuarios_idTipos_usuarios='$Tipos_usuarios_idTipos_usuarios' WHERE idUsuarios='$idUsuarios'";
+$insertar ="UPDATE usuarios SET Nombre='$Nombre', clave='$clave', Tipos_usuarios_idTipos_usuarios='$Tipos_usuarios_idTipos_usuarios' WHERE idUsuarios='$idUsuarios'";
 
 $resultado=mysqli_query($conexion, $insertar);
 ?>
