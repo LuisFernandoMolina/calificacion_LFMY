@@ -2,7 +2,7 @@
 	//require de la conexion
 	include("conexion.php");
 	$username=$_POST['usuario'];
-	$pass=$_POST['clave'];
+	$pass=md5($_POST['clave']);
 
 	//Consulta a la base
 	$consulta="SELECT*FROM usuarios WHERE Nombre='$username' and clave='$pass'";
