@@ -1,4 +1,5 @@
 /* Aqui va el codigo de excel*/
+/*Este es el excel*/
 <?php
 /*$mysqli= new mysqli('localhost','root','','constitucion');
 $sql = "SELECT * FROM usuarios where 	Tipos_usuarios_idTipos_usuarios=3";
