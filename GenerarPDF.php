@@ -2,6 +2,7 @@
 include 'plantilla.php';
 require 'conexion.php';
 //consulta que se quiere mostrar
+//Anita la huerfanita
 $query= " SELECT * FROM materias";
 $resultado=$conexion->query($query);
 $pdf= new PDF();
