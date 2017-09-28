@@ -105,11 +105,14 @@ $objPHPExcel->getActiveSheet(2)->setTitle('Reporte Materias');
 
 
 
-
+header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+header('Content-Disposition: attachment;filename="ReporteConstitucion.xlsx"');
+header('Cache-Control: max-age=0');
+ 
 
 $callStartTime = microtime(true);
 $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-$objWriter->save('REPORTES.xlsx');//Esta sale sobrando
+$objWriter->save('php://output');//Esta sale sobrando
 $callEndTime = microtime(true);
 $callTime = $callEndTime - $callStartTime;
 ?>
