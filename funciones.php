@@ -177,7 +177,7 @@ function menu(){
               echo "<li><a href='DB_Materias.php'>Materias</a></li>";
               echo "<li><a href='DB_Usuarios.php'>Usuarios</a>";
               echo "<li><a href='\constitucion\calificacion_LFMY\DB_Grupos.php'>Grupos</a>";
-
+              echo"<li class='dropdown'>";
               echo"<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Base de datos <span class='caret'></span></a>";
               echo"<ul class='dropdown-menu'>";
                   echo"<li><a href='#' target='_blank' >Excel</a></li>";
