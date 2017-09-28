@@ -1,5 +1,0 @@
-<?php
-
-
-$query= " SELECT * FROM usuarios WHERE Tipos_usuarios_idTipos_usuarios=3";
-php?>
