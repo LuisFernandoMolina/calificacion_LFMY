@@ -1,6 +1,9 @@
-/* Aqui va el codigo de excel*/
-/*Este es el excel*/
+
 <?php
+
+header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+header('Content-Disposition: attachment;filename="ReporteConstitucion.xlsx"');
+header('Cache-Control: max-age=0');
 /*$mysqli= new mysqli('localhost','root','','constitucion');
 $sql = "SELECT * FROM usuarios where 	Tipos_usuarios_idTipos_usuarios=3";
 $resultado=$mysqli->query($sql);*/
@@ -105,14 +108,14 @@ $objPHPExcel->getActiveSheet(2)->setTitle('Reporte Materias');
 
 
 
-header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-header('Content-Disposition: attachment;filename="ReporteConstitucion.xlsx"');
-header('Cache-Control: max-age=0');
- 
+
 
 $callStartTime = microtime(true);
 $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+ob_end_clean();
 $objWriter->save('php://output');//Esta sale sobrando
 $callEndTime = microtime(true);
+/* Limpiamos el búfer */
+
 $callTime = $callEndTime - $callStartTime;
 ?>
