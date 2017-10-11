@@ -1,6 +1,10 @@
 <?php
 	
 	//Prueba de como debe quedar la tabla
+//Referencias:
+	//http://panamahitek.com/graficas-con-canvasjs/
+	//http://www.maani.us/charts4/index.php?menu=Tutorial&submenu=Chart_Data
+	//Prueba de como debe quedar la tabla
 	$chart ['chart_data'] = array ( array ("Materias",     "Quimica", "Fisica"),
 									array ("Alumnos",       "",        ""     ),
 									array ("Fernando",         10,        9    ),
